@@ -3,20 +3,8 @@
 <head>
 	<title>My Personal Website</title>
 </head>
-
-$(document).ready(function(){
-  // Smooth Scrolling
-  $('a[href^="#"]').on('click', function(event) {
-      var target = $(this.getAttribute('href'));
-      if( target.length ) {
-          event.preventDefault();
-          $('html, body').stop().animate({
-              scrollTop: target.offset().top
-          }, 1000);
-      }
-  });
-});
-
+	
+<script src="main.js"></script>
 
 <body>
 	<h1>Welcome to my website!</h1>
