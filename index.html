@@ -3,7 +3,143 @@
 <head>
 	<title>My Personal Website</title>
 </head>
+
+$(document).ready(function(){
+  // Smooth Scrolling
+  $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+              scrollTop: target.offset().top
+          }, 1000);
+      }
+  });
+});
+
+
 <body>
 	<h1>Welcome to my website!</h1>
 </body>
 </html>
+
+<header>
+	<nav>
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#publications">Publications</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="about">
+	<div class="container">
+		<img src="your-picture.jpg" alt="Your Picture">
+		<h2>Your Name</h2>
+		<h3>Your Position</h3>
+		<h4>Your Institute</h4>
+	</div>
+</section>
+
+<section id="education">
+	<div class="container">
+		<h2>Education</h2>
+		<div class="row">
+			<div class="col">
+				<img src="education-1.jpg" alt="Education 1">
+				<h3>Degree 1</h3>
+				<p>Year 1 - Year 2</p>
+				<p>Institute 1</p>
+			</div>
+			<div class="col">
+				<img src="education-2.jpg" alt="Education 2">
+				<h3>Degree 2</h3>
+				<p>Year 3 - Year 4</p>
+				<p>Institute 2</p>
+			</div>
+			<div class="col">
+				<img src="education-3.jpg" alt="Education 3">
+				<h3>Degree 3</h3>
+				<p>Year 5 - Year 6</p>
+				<p>Institute 3</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="experience">
+	<div class="container">
+		<h2>Experience</h2>
+		<div class="timeline">
+			<div class="item">
+				<div class="work-info">
+					<h3>Position 1</h3>
+					<p>Date 1</p>
+					<p>Location 1</p>
+					<p>Institute 1</p>
+				</div>
+				<div class="work-description">
+					<p>Job description 1</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="work-info">
+					<h3>Position 2</h3>
+					<p>Date 2</p>
+					<p>Location 2</p>
+					<p>Institute 2</p>
+				</div>
+				<div class="work-description">
+					<p>Job description 2</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="work-info">
+					<h3>Position 3</h3>
+					<p>Date 3</p>
+					<p>Location 3</p>
+					<p>Institute 3</p>
+				</div>
+				<div class="work-description">
+					<p>Job description 3</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="publications">
+	<div class="container">
+		<h2>Publications</h2>
+		<ul>
+			<li>Publication 1</li>
+			<li>Publication 2</li>
+			<li>Publication 3</li>
+		</ul>
+	</div>
+</section>
+
+
+<section id="contact">
+	<div class="container">
+		<h2>Contact</h2>
+		<form action="submit-form.php" method="post">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Send">
+		</form>
+	</div>
+</section>
+
+
+
