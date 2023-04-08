@@ -87,35 +87,80 @@ nav ul li a:hover {
 
 /* About Section */
 #about {
-	background-color: #f7f7f7;
-	padding: 100px 0;
+  background-color: #f7f7f7;
+  padding: 100px 0;
 }
 
-#about h2 {
-	font-size: 2rem;
-	margin-top: 0;
-	margin-bottom: 50px;
-	color: #333;
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-#about p {
-	font-size: 1.2rem;
-	margin-bottom: 50px;
-	color: #666;
+.img-container {
+  flex: 0 0 30%;
+  max-width: 30%;
+  margin-right: 5%;
 }
 
-#about .row {
-	margin-bottom: 50px;
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
-#about .col {
-	flex: 1;
-	padding: 0 15px;
+.bio-container {
+  flex: 0 0 65%;
+  max-width: 65%;
 }
 
-#about img {
-	width: 100%;
-	border-radius: 5px;
+.bio-container h2,
+.bio-container h3,
+.bio-container h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.bio-container h2 {
+  font-size: 2rem;
+}
+
+.bio-container h3 {
+  font-size: 1.5rem;
+}
+
+.bio-container h4 {
+  font-size: 1.2rem;
+}
+
+.social-links {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin-right: 10px;
+}
+
+.social-links img {
+  height: 30px;
+}
+
+.bio-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.bio-container h4 + ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.bio-container li {
+  margin-bottom: 5px;
 }
 
 /* Education Section */
