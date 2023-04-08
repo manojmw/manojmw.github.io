@@ -356,12 +356,12 @@ nav ul li a:hover {
 
 .social-links {
   	display: flex;
- 	justify-content: space-between;
-  	width: 200px; /* adjust the width as needed */
- 	margin: 50px auto 0;
+  	justify-content: space-between;
+  	margin: 50px auto 0;
 }
 
 .social-links img {
-	height: 30px;
-	margin-right: 10px;
+  	height: 30px;
+  	width: 30px; /* adjust the width as needed */
+  	margin-right: 10px;
 }
