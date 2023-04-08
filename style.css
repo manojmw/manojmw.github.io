@@ -353,3 +353,16 @@ nav ul li a:hover {
 #contact .status.error {
 	color: #f44336;
 }
+
+.social-links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 10px;
+}
+
+.social-links img {
+	height: 25px;
+	margin-right: 10px;
+}
