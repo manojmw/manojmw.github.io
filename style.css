@@ -357,7 +357,7 @@ nav ul li a:hover {
 .social-links {
   	display: flex;
  	justify-content: space-between;
-  	width: 500px; /* adjust the width as needed */
+  	width: 200px; /* adjust the width as needed */
  	margin: 50px auto 0;
 }
 
