@@ -94,7 +94,7 @@ nav ul li a:hover {
 .about-content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .img-container {
@@ -162,6 +162,7 @@ nav ul li a:hover {
 .bio-container li {
   margin-bottom: 5px;
 }
+
 
 /* Education Section */
 #education {
