@@ -93,7 +93,7 @@ nav ul li a:hover {
 .about-content {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 }
 .img-container {
   flex: 0 0 30%;
@@ -109,9 +109,7 @@ nav ul li a:hover {
   flex: 0 0 65%;
   max-width: 65%;
 }
-.info-container h2,
-.info-container h3,
-.info-container h4 {
+.info-container h2, .info-container h3, .info-container h4 {
   margin-top: 0;
   margin-bottom: 10px;
   color: #333;
@@ -135,19 +133,39 @@ nav ul li a:hover {
 .social-links img {
   height: 30px;
 }
+
 .bio-container {
   flex: 0 0 100%;
   max-width: 100%;
-  margin-top: 30px;
+  margin-top: 40px;
 }
+
+.bio-container h2,
+.bio-container h3,
 .bio-container h4 {
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
 }
+
+.bio-container h2 {
+  font-size: 2rem;
+}
+
+.bio-container h3 {
+  font-size: 1.5rem;
+}
+
+.bio-container h4 {
+  font-size: 1.2rem;
+}
+
 .bio-container h4 + ul {
   margin-top: 0;
   margin-bottom: 20px;
   list-style: none;
 }
+
 .bio-container li {
   margin-bottom: 5px;
 }
