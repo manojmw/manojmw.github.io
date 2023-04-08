@@ -86,6 +86,7 @@ nav ul li a:hover {
 }
 
 /* About Section */
+/* About Section */
 #about {
   background-color: #f7f7f7;
   padding: 100px 0;
@@ -94,7 +95,7 @@ nav ul li a:hover {
 .about-content {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .img-container {
@@ -109,28 +110,28 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-.bio-container {
+.info-container {
   flex: 0 0 65%;
   max-width: 65%;
 }
 
-.bio-container h2,
-.bio-container h3,
-.bio-container h4 {
+.info-container h2,
+.info-container h3,
+.info-container h4 {
   margin-top: 0;
   margin-bottom: 10px;
   color: #333;
 }
 
-.bio-container h2 {
+.info-container h2 {
   font-size: 2rem;
 }
 
-.bio-container h3 {
+.info-container h3 {
   font-size: 1.5rem;
 }
 
-.bio-container h4 {
+.info-container h4 {
   font-size: 1.2rem;
 }
 
@@ -147,6 +148,16 @@ nav ul li a:hover {
   height: 30px;
 }
 
+.bio-container {
+  margin-top: 30px;
+}
+
+.bio-container h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
 .bio-container h4 + ul {
   margin-top: 0;
   margin-bottom: 20px;
@@ -156,6 +167,13 @@ nav ul li a:hover {
 .bio-container li {
   margin-bottom: 5px;
 }
+
+.bio-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
 
 /* Education Section */
 #education {
