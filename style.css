@@ -11,9 +11,33 @@ h1 {
 }
 
 .container {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.about-section {
+	flex-basis: 50%;
+}
+
+.bio-section {
+	flex-basis: 50%;
+}
+
+.bio-section p {
+	text-align: justify;
+}
+
+.social-links {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.social-links img {
+	height: 30px;
+	margin-right: 10px;
 }
 
 .row {
@@ -352,16 +376,4 @@ nav ul li a:hover {
 
 #contact .status.error {
 	color: #f44336;
-}
-
-.social-links {
-  	display: flex;
-  	justify-content: space-between;
-  	margin: 50px auto 0;
-}
-
-.social-links img {
-  	height: 30px;
-  	width: 30px; /* adjust the width as needed */
-  	margin-right: 10px;
 }
