@@ -231,65 +231,105 @@ a:hover {
   background-color: #fff;
   padding: 100px 0; /* Top and bottom padding */
 }
-
 #education h2 {
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 50px;
   color: #333;
 }
-
 .timeline {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
-
 .timeline-item {
   position: relative;
   flex: 1;
   min-width: 250px;
   margin-bottom: 40px;
+  height: 120px; /* Fixed height */
+  box-sizing: border-box; /* Include border and padding in height calculation */
 }
-
 .timeline-dot {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
+  left: -25px; /* Adjusted position */
+  width: 20px; /* Adjusted size */
+  height: 20px; /* Adjusted size */
   background-color: #4a68aa;
   border-radius: 50%;
   z-index: 2;
-  margin-left: -5px;
-  margin-top: -5px;
+  margin-top: -10px; /* Adjusted position */
+  border: 2px solid #4a68aa;
 }
-
+.timeline-dot.phd {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+}
 .timeline-content {
   padding: 20px;
-  border: 2px solid #4a68aa;
   border-radius: 4px;
   text-align: center;
+  position: relative; /* Added position for :after pseudo-element */
+  z-index: 1;
 }
-
 .timeline-content h3 {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 10px;
   color: #333;
 }
-
 .timeline-content p {
   font-size: 1.1rem;
-  margin-top: 0;
+  margin-top: 5px; /* Added some space after the year */
   margin-bottom: 0;
   color: #666;
 }
-
-.timeline-dot.phd {
+.timeline-dot.phd:after {
+  content: "Current Degree"; /* Added text */
+  position: absolute;
+  top: 50%;
+  left: -110px; /* Adjusted position */
   background-color: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform: translateY(-50%);
 }
+/* Added rules for creating the connecting line */
+.timeline-item:after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: 2px solid #4a68aa;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.timeline-dot.phd:after {
+  content: "PhD";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4a68aa;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  z-index: 4;
+}
+
 
 /* Experience Section */
 #experience {
