@@ -11,7 +11,7 @@ h1 {
 }
 
 .container {
-  max-width: 85%;
+  max-width: 70%;
   margin: 0 auto;
   padding: 50px 30px; /* Decreased left and right padding */
 }
@@ -98,10 +98,13 @@ nav ul li a:hover {
   gap: 6%;
 }
 
-.left-section,
+.left-section {
+  flex: 0 0 40%; 
+  max-width: 40%; 
+}
 .right-section {
-  flex: 1;
-  max-width: 50%;
+  flex: 1; 
+  padding: 0 15px;
 }
 
 .left-section {
