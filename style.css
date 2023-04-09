@@ -101,7 +101,7 @@ nav ul li a:hover {
 .left-section,
 .right-section {
   flex: 1;
-  max-width: 49%;
+  max-width: 50%;
 }
 
 .img-container {
@@ -140,11 +140,14 @@ nav ul li a:hover {
 .info-container h3 {
   font-size: 1.2rem; /* Decreased font size */
   color: #6d7a9a; /* Different color for position */
+  margin-bottom: 15px;
+  white-space: nowrap
 }
 
 .info-container h4 {
   font-size: 1rem; /* Decreased font size */
   color: #4a68aa;
+  white-space: nowrap
 }
 
 .social-links {
@@ -160,11 +163,11 @@ nav ul li a:hover {
 }
 
 .social-links img {
-  height: 30px;
+  height: 40px;
 }
 
 .bio-container {
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 .bio-container h2,
@@ -195,7 +198,7 @@ nav ul li a:hover {
 }
 
 .bio-container li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 /* Education Section */
