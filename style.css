@@ -322,9 +322,8 @@ a:hover {
 #experience .timeline::before {
   content: '';
   position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: calc(20px + 2px); 
   width: 2px;
   height: 100%;
   background-color: black;
@@ -333,7 +332,7 @@ a:hover {
 
 #experience .timeline .item {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 #experience .timeline .item::before {
@@ -384,6 +383,9 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
   color: #666;
+}
+
+#experience .timeline .work-info p:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -401,6 +403,7 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
   color: #666;
+  line-height: 1.5
 }
 
 
