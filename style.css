@@ -90,54 +90,63 @@ nav ul li a:hover {
   background-color: #f7f7f7;
   padding: 100px 0;
 }
+
 .about-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
 }
-.img-container {
-  flex: 0 0 30%;
-  max-width: 30%;
-  margin-right: 5%;
+
+.left-section, .right-section {
+  flex: 1;
+  max-width: 50%;
 }
+
+.img-container {
+  margin-bottom: 20px;
+}
+
 .img-container img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
-.info-container {
-  flex: 0 0 65%;
-  max-width: 65%;
-}
-.info-container h2, .info-container h3, .info-container h4 {
+
+.info-container h2,
+.info-container h3,
+.info-container h4 {
   margin-top: 0;
   margin-bottom: 10px;
   color: #333;
 }
+
 .info-container h2 {
   font-size: 2rem;
 }
+
 .info-container h3 {
   font-size: 1.5rem;
 }
+
 .info-container h4 {
   font-size: 1.2rem;
 }
+
 .social-links {
   display: flex;
   margin-bottom: 20px;
 }
+
 .social-links a {
   margin-right: 10px;
 }
+
 .social-links img {
   height: 30px;
 }
 
 .bio-container {
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-top: 40px;
+  margin-top: 0;
 }
 
 .bio-container h2,
