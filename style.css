@@ -323,12 +323,11 @@ a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 50%;
+  left: calc(50% - 2px); /* Corrected left value */
   width: 4px;
   height: 100%;
-  background-color: transparent; /* Make the main line transparent */
+  background-color: blue;
 }
-
 
 #experience .timeline .item {
   position: relative;
@@ -339,7 +338,7 @@ a:hover {
   content: "";
   position: absolute;
   top: 15px;
-  left: 50%;
+  left: calc(50% - 8px); /* Corrected left value */
   width: 16px;
   height: 16px;
   background-color: #333;
@@ -350,12 +349,12 @@ a:hover {
 #experience .timeline-item::after {
   content: "";
   position: absolute;
-  top: 31px; /* Add the line segment below the circle */
-  left: 50%;
+  top: 31px;
+  left: calc(50% - 2px); /* Corrected left value */
   width: 4px;
-  height: calc(100% - 31px); /* Adjust the height to connect only to the next circle */
+  height: calc(100% - 31px);
   background-color: #333;
-  z-index: -1; /* Place the line segment behind the circle */
+  z-index: -1;
 }
 
 #experience .timeline .item.current::before {
