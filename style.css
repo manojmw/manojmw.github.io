@@ -229,8 +229,9 @@ a:hover {
 /* Education Section */
 #education {
   background-color: #fff;
-  padding: 100px 0;
+  padding: 100px 0; /* Top and bottom padding */
 }
+
 #education h2 {
   font-size: 2rem;
   margin-top: 0;
@@ -238,48 +239,61 @@ a:hover {
   color: #333;
 }
 
-/* Education Section */
-#education {
-  background-color: #fff;
-  padding: 100px 0;
-}
-#education h2 {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: #333;
-}
-.timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.timeline-item {
+#education-timeline {
   position: relative;
-  background-color: #e0f0ff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.timeline-item .timeline-content h3 {
-  font-size: 1.5rem;
+
+#education-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.education-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 40px;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 10px;
+  height: 10px;
+  background-color: #4a68aa;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.education-item h3 {
+  font-size: 1.3rem; /* Reduced font size for the name of the degree */
   margin-top: 0;
   margin-bottom: 10px;
   color: #333;
 }
-.timeline-item .timeline-content p {
-  font-size: 1rem;
+
+.education-item p {
+  font-size: 1.1rem; /* Increased font size of the institutions */
   margin-top: 0;
   margin-bottom: 0;
   color: #666;
 }
-.timeline-item .timeline-content a {
-  color: #4a8af4;
-  text-decoration: none;
-}
-.timeline-item .timeline-content a:hover {
-  text-decoration: underline;
+
+.education-item .degree-box {
+  background-color: #e0f0ff; /* Changed the background color of the boxes */
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 /* Experience Section */
