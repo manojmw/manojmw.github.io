@@ -323,7 +323,7 @@ a:hover {
   content: '';
   position: absolute;
   top: 0;
-  left: 50%;
+  left: calc(50% - 1px);
   width: 2px;
   height: 100%;
   background-color: black;
@@ -339,7 +339,7 @@ a:hover {
   content: '';
   position: absolute;
   top: 15px;
-  left: -10px;
+  left: 50%;
   width: 20px;
   height: 20px;
   background-color: transparent;
@@ -383,10 +383,11 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
   color: #666;
+  display: inline;
 }
 
 #experience .timeline .work-info p:not(:first-child) {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 #experience .timeline .work-description {
