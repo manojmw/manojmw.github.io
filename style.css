@@ -139,7 +139,7 @@ nav ul li a:hover {
 
 .info-container h3 {
   font-size: 1.2rem; /* Decreased font size */
-  color: #6d7a9a; /* Different color for position */
+  color: #808080; /* Different color for position */
   margin-bottom: 15px;
   white-space: nowrap
 }
