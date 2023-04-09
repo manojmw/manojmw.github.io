@@ -323,7 +323,7 @@ a:hover {
   content: '';
   position: absolute;
   top: 0;
-  left: calc(20px + 2px); 
+  left: 50%;
   width: 2px;
   height: 100%;
   background-color: black;
@@ -403,7 +403,6 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
   color: #666;
-  line-height: 1.5
 }
 
 
