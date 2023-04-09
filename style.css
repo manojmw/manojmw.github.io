@@ -307,52 +307,44 @@ a:hover {
   background-color: #f7f7f7;
   padding: 100px 0;
 }
-
 #experience h2 {
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 50px;
   color: #333;
 }
-
 #experience .timeline {
   position: relative;
 }
-
 #experience .timeline::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 50%;
+  left: calc(50% - 1px);
   width: 2px;
   height: 100%;
   background-color: black;
   z-index: -1;
 }
-
 #experience .timeline .item {
   position: relative;
   margin-bottom: 80px;
 }
-
 #experience .timeline .item::before {
   content: '';
   position: absolute;
   top: 15px;
-  left: 50%;
+  left: calc(50% - 10px);
   width: 20px;
   height: 20px;
   background-color: transparent;
   border: 2px solid lightgray;
   border-radius: 50%;
-  transform: translateX(-50%);
   z-index: 1;
 }
-
 #experience .timeline .item.current::before {
   background-color: #4CAF50;
 }
-
 #experience .timeline .work-info {
   position: relative;
   padding: 20px;
@@ -361,15 +353,12 @@ a:hover {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 #experience .timeline .work-info h3 {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 10px;
   color: #333;
-  display: inline;
 }
-
 #experience .timeline .work-info .year {
   font-size: 1rem;
   position: absolute;
@@ -377,19 +366,15 @@ a:hover {
   right: 20px;
   color: darkgray;
 }
-
 #experience .timeline .work-info p {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0;
   color: #666;
-  display: inline;
 }
-
 #experience .timeline .work-info p:not(:first-child) {
-  margin-left: 5px;
+  display: block;
 }
-
 #experience .timeline .work-description {
   position: relative;
   padding: 20px;
@@ -398,7 +383,6 @@ a:hover {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 #experience .timeline .work-description p {
   font-size: 1rem;
   margin-top: 0;
