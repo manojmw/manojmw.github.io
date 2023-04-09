@@ -95,7 +95,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
-  gap: 6%; /* Increased gap between left and right sections */
+  gap: 4%; /* Increased gap between left and right sections */
 }
 
 .left-section,
@@ -112,7 +112,7 @@ nav ul li a:hover {
 .img-container img {
   max-width: 70%; /* Changed width here to scale the image */
   height: auto;
-  border-radius: 5px;
+  border-radius: 50%; /* Added circular frame */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -126,16 +126,19 @@ nav ul li a:hover {
 .info-container h3,
 .info-container h4 {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px; /* Reduced margin-bottom */
   color: #333;
+  padding-left: 15%; /* Added padding to align with the image */
+  padding-right: 15%; /* Added padding to align with the image */
 }
 
 .info-container h2 {
-  font-size: 1.4rem; /* Decreased font size */
+  font-size: 1.7rem; /* Decreased font size */
+  margin-bottom: 20px; /* Increased spacing after the name */
 }
 
 .info-container h3 {
-  font-size: 1rem; /* Decreased font size */
+  font-size: 1.2rem; /* Decreased font size */
   color: #6d7a9a; /* Different color for position */
 }
 
@@ -147,7 +150,7 @@ nav ul li a:hover {
 .social-links {
   display: flex;
   width: 100%; /* Adjusted width */
-  justify-content: space-between;
+  justify-content: space-around; /* Increased gap between the logos */
   margin-top: 0; /* Adjusted margin to reduce gap */
   padding-left: 0; /* Removed left padding */
 }
@@ -194,7 +197,6 @@ nav ul li a:hover {
 .bio-container li {
   margin-bottom: 5px;
 }
-
 
 /* Education Section */
 #education {
