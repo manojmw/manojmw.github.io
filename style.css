@@ -350,7 +350,7 @@ a:hover {
   content: "";
   position: absolute;
   top: 31px;
-  left: calc(50% - 2px); /* Corrected left value */
+  left: 0;
   width: 4px;
   height: calc(100% - 31px);
   background-color: #333;
