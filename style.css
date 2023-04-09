@@ -323,10 +323,10 @@ a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: calc(50% - 2px); /* Corrected left value */
+  left: 15px;
   width: 4px;
   height: 100%;
-  background-color: blue;
+  background-color: lightblue;
 }
 
 #experience .timeline .item {
@@ -338,7 +338,7 @@ a:hover {
   content: "";
   position: absolute;
   top: 15px;
-  left: calc(50% - 8px); /* Corrected left value */
+  left: 0;
   width: 16px;
   height: 16px;
   background-color: #333;
