@@ -94,7 +94,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
-  gap: 8%; /* Increased gap between left and right sections */
+  gap: 6%; /* Increased gap between left and right sections */
 }
 .left-section,
 .right-section {
