@@ -320,7 +320,7 @@ a:hover {
   content: '';
   position: absolute;
   top: 0;
-  left: calc(50% - 1px);
+  left: calc(70px - 1px);
   width: 2px;
   height: 100%;
   background-color: black;
@@ -334,7 +334,7 @@ a:hover {
   content: '';
   position: absolute;
   top: 15px;
-  left: calc(50% - 10px);
+  left: calc(70px - 10px);
   width: 20px;
   height: 20px;
   background-color: transparent;
