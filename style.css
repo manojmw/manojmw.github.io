@@ -99,8 +99,8 @@ nav ul li a:hover {
 }
 
 .left-section {
-  flex: 0 0 40%; 
-  max-width: 40%; 
+  flex: 0 0 30%; 
+  max-width: 30%; 
 }
 .right-section {
   flex: 1; 
@@ -202,7 +202,7 @@ nav ul li a:hover {
 }
 
 .bio-container h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .bio-container h4 + ul {
