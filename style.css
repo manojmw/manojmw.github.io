@@ -126,15 +126,15 @@ nav ul li a:hover {
 }
 
 .info-container h2 {
-  font-size: 1.7rem; /* Decreased font size */
+  font-size: 1rem; /* Decreased font size */
 }
 
 .info-container h3 {
-  font-size: 1.2rem; /* Decreased font size */
+  font-size: 0.8rem; /* Decreased font size */
 }
 
 .info-container h4 {
-  font-size: 1rem; /* Decreased font size */
+  font-size: 0.8rem; /* Decreased font size */
   color: #4a68aa;
 }
 
@@ -142,7 +142,7 @@ nav ul li a:hover {
   display: flex;
   width: 100%; /* Adjusted width */
   justify-content: space-between;
-  margin-top: -10px; /* Adjusted margin to reduce gap */
+  margin-top: -50px; /* Adjusted margin to reduce gap */
 }
 
 .social-links a {
