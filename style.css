@@ -95,7 +95,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
-  gap: 2%;
+  gap: 4%; /* Increased gap between left and right sections */
 }
 
 .left-section,
@@ -115,6 +115,10 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+.info-container {
+  text-align: center; /* Center the text */
+}
+
 .info-container h2,
 .info-container h3,
 .info-container h4 {
@@ -126,15 +130,16 @@ nav ul li a:hover {
 }
 
 .info-container h2 {
-  font-size: 1rem; /* Decreased font size */
+  font-size: 1.7rem; /* Decreased font size */
 }
 
 .info-container h3 {
-  font-size: 0.8rem; /* Decreased font size */
+  font-size: 1.2rem; /* Decreased font size */
+  color: #6d7a9a; /* Different color for position */
 }
 
 .info-container h4 {
-  font-size: 0.8rem; /* Decreased font size */
+  font-size: 1rem; /* Decreased font size */
   color: #4a68aa;
 }
 
@@ -142,7 +147,8 @@ nav ul li a:hover {
   display: flex;
   width: 100%; /* Adjusted width */
   justify-content: space-between;
-  margin-top: -50px; /* Adjusted margin to reduce gap */
+  margin-top: 0; /* Adjusted margin to reduce gap */
+  padding-left: 0; /* Removed left padding */
 }
 
 .social-links a {
