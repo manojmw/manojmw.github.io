@@ -226,55 +226,80 @@ a:hover {
   text-decoration: underline; /* Added underline on hover */
 }
 
-
 /* Education Section */
 #education {
-	background-color: #fff;
-	padding: 100px 0;
+  background-color: #fff;
+  padding: 100px 0;
 }
-
 #education h2 {
-	font-size: 2rem;
-	margin-top: 0;
-	margin-bottom: 50px;
-	color: #333;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #333;
 }
 
-#education .row {
-	margin-bottom: 50px;
+/* Education Section - Timeline */
+.timeline {
+  position: relative;
 }
 
-#education .col {
-	flex: 1;
-	padding: 0 15px;
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #333;
 }
 
-#education .dog {
-	width: 100%;
-	text-align: center;
-	margin-bottom: 30px;
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 30px;
 }
 
-#education .dog img {
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	object-fit: cover;
-	margin-bottom: 20px;
+.timeline-item:nth-child(even) {
+  margin-left: 50%;
 }
 
-#education .dog h3 {
-	font-size: 1.5rem;
-	margin-top: 0;
-	margin-bottom: 10px;
-	color: #333;
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-#education .dog p {
-	font-size: 1rem;
-	margin-top: 0;
-	margin-bottom: 0;
-	color: #666;
+.timeline-item .timeline-content {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item .timeline-content h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+.timeline-item .timeline-content p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #666;
+}
+.timeline-item .timeline-content a {
+  color: #4a8af4;
+  text-decoration: none;
+}
+.timeline-item .timeline-content a:hover {
+  text-decoration: underline;
 }
 
 /* Experience Section */
