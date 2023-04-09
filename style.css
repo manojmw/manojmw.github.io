@@ -238,50 +238,30 @@ a:hover {
   color: #333;
 }
 
-/* Education Section - Timeline */
+/* Education Section */
+#education {
+  background-color: #fff;
+  padding: 100px 0;
+}
+#education h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #333;
+}
 .timeline {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 4px;
-  height: 100%;
-  background-color: #333;
-}
-
 .timeline-item {
   position: relative;
-  width: 50%;
-  padding: 20px 30px;
-}
-
-.timeline-item:nth-child(even) {
-  margin-left: 50%;
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  width: 16px;
-  height: 16px;
-  background-color: #333;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline-item .timeline-content {
-  background-color: #f7f7f7;
+  background-color: #e0f0ff;
+  padding: 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .timeline-item .timeline-content h3 {
   font-size: 1.5rem;
   margin-top: 0;
