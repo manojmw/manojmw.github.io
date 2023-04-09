@@ -322,12 +322,11 @@ a:hover {
 #experience .timeline::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 15px;
+  left: -10px;
   width: 2px;
   height: 100%;
-  background-color: lightgray;
+  background-color: black;
   z-index: -1;
 }
 
@@ -358,7 +357,7 @@ a:hover {
   position: relative;
   padding: 20px;
   margin-left: 70px;
-  background-color: #fff;
+  background-color: #e0f7fa;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -390,7 +389,7 @@ a:hover {
   position: relative;
   padding: 20px;
   margin-left: 70px;
-  background-color: #fff;
+  background-color: #e0f7fa;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
