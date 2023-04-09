@@ -122,18 +122,19 @@ nav ul li a:hover {
   margin-bottom: 10px;
   color: #333;
   width: 100%; /* Added width */
+  word-wrap: break-word; /* Added word wrapping */
 }
 
 .info-container h2 {
-  font-size: 2rem;
+  font-size: 1.7rem; /* Decreased font size */
 }
 
 .info-container h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem; /* Decreased font size */
 }
 
 .info-container h4 {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Decreased font size */
   color: #4a68aa;
 }
 
@@ -141,6 +142,7 @@ nav ul li a:hover {
   display: flex;
   width: 100%; /* Adjusted width */
   justify-content: space-between;
+  margin-top: -10px; /* Adjusted margin to reduce gap */
 }
 
 .social-links a {
@@ -185,6 +187,7 @@ nav ul li a:hover {
 .bio-container li {
   margin-bottom: 5px;
 }
+
 
 /* Education Section */
 #education {
