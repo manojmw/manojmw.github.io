@@ -13,7 +13,7 @@ h1 {
 .container {
   max-width: 65%;
   margin: 0 auto;
-  padding: 50px 30px; /* Decreased left and right padding */
+  padding: 40px 25px; /* Decreased left and right padding */
 }
 
 .row {
