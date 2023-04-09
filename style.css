@@ -90,25 +90,21 @@ nav ul li a:hover {
   background-color: #f7f7f7;
   padding: 100px 0;
 }
-
 .about-content {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
   gap: 8%; /* Increased gap between left and right sections */
 }
-
 .left-section,
 .right-section {
   flex: 1;
   max-width: 50%;
 }
-
 .img-container {
   margin-bottom: 20px;
   width: 100%; /* Changed width to match the text */
 }
-
 .img-container img {
   max-width: 70%; /* Changed width here to scale the image */
   height: auto;
@@ -117,39 +113,34 @@ nav ul li a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
 .info-container {
   text-align: center; /* Center the text */
 }
-
 .info-container h2,
 .info-container h3,
 .info-container h4 {
   margin-top: 0;
   margin-bottom: 5px; /* Reduced margin-bottom */
   color: #333;
-  padding-left: 15%; /* Added padding to align with the image */
-  padding-right: 15%; /* Added padding to align with the image */
+  padding-left: 10%; /* Adjusted padding to align with the image */
+  padding-right: 10%; /* Adjusted padding to align with the image */
 }
-
 .info-container h2 {
   font-size: 1.7rem; /* Decreased font size */
   margin-bottom: 20px; /* Increased spacing after the name */
 }
-
 .info-container h3 {
   font-size: 1.2rem; /* Decreased font size */
   color: #808080; /* Different color for position */
   margin-bottom: 15px;
-  white-space: nowrap
+  white-space: nowrap;
+  font-style: italic; /* Added different font style for position */
 }
-
 .info-container h4 {
   font-size: 1rem; /* Decreased font size */
   color: #4a68aa;
-  white-space: nowrap
+  white-space: nowrap;
 }
-
 .social-links {
   display: flex;
   width: 100%; /* Adjusted width */
@@ -157,19 +148,15 @@ nav ul li a:hover {
   margin-top: 0; /* Adjusted margin to reduce gap */
   padding-left: 0; /* Removed left padding */
 }
-
 .social-links a {
   margin-right: 10px;
 }
-
 .social-links img {
   height: 40px;
 }
-
 .bio-container {
   margin-top: 20px;
 }
-
 .bio-container h2,
 .bio-container h3,
 .bio-container h4 {
@@ -177,26 +164,21 @@ nav ul li a:hover {
   margin-bottom: 10px;
   color: #333;
 }
-
 .bio-container h2 {
   font-size: 2rem;
 }
-
 .bio-container h3 {
   font-size: 1.5rem;
 }
-
 .bio-container h4 {
   font-size: 1.2rem;
 }
-
 .bio-container h4 + ul {
   margin-top: 0;
   margin-bottom: 20px;
   list-style: disc; /* Added bullet points */
   padding-left: 1.5rem; /* Added padding for bullet points */
 }
-
 .bio-container li {
   margin-bottom: 10px;
 }
