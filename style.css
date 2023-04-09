@@ -324,9 +324,9 @@ a:hover {
   position: absolute;
   top: 0;
   left: 15px;
-  width: 4px;
+  width: 2px;
   height: 100%;
-  background-color: lightblue;
+  background-color: rgb(33, 33, 236);
 }
 
 #experience .timeline .item {
@@ -346,19 +346,8 @@ a:hover {
   z-index: 1;
 }
 
-#experience .timeline-item::after {
-  content: "";
-  position: absolute;
-  top: 31px;
-  left: 0;
-  width: 4px;
-  height: calc(100% - 31px);
-  background-color: #333;
-  z-index: -1;
-}
-
 #experience .timeline .item.current::before {
-  background-color: #4CAF50;
+  background-color: #74e278;
 }
 
 #experience .timeline .work-info {
