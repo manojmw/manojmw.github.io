@@ -320,32 +320,42 @@ a:hover {
 }
 
 #experience .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
-  left: 10px;
-  width: 2px;
+  left: 50%;
+  width: 4px;
   height: 100%;
-  background-color: blue;
-  z-index: 0; /* Change the z-index to 0 */
+  background-color: transparent; /* Make the main line transparent */
 }
+
 
 #experience .timeline .item {
   position: relative;
   margin-bottom: 80px;
 }
 
-#experience .timeline .item::before {
-  content: '';
+#experience .timeline-item::before {
+  content: "";
   position: absolute;
   top: 15px;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: 2px solid lightgray;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #333;
   border-radius: 50%;
   z-index: 1;
+}
+
+#experience .timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 31px; /* Add the line segment below the circle */
+  left: 50%;
+  width: 4px;
+  height: calc(100% - 31px); /* Adjust the height to connect only to the next circle */
+  background-color: #333;
+  z-index: -1; /* Place the line segment behind the circle */
 }
 
 #experience .timeline .item.current::before {
