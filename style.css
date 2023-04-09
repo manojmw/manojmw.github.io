@@ -95,21 +95,22 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
-  gap: 2%; /* Added gap between left and right sections */
+  gap: 2%;
 }
 
 .left-section,
 .right-section {
   flex: 1;
-  max-width: 49%; /* Adjusted to accommodate the gap */
+  max-width: 49%;
 }
 
 .img-container {
   margin-bottom: 20px;
+  width: 70%; /* Added width */
 }
 
 .img-container img {
-  max-width: 70%; /* Adjusted the image size */
+  max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
@@ -120,6 +121,7 @@ nav ul li a:hover {
   margin-top: 0;
   margin-bottom: 10px;
   color: #333;
+  width: 100%; /* Added width */
 }
 
 .info-container h2 {
@@ -127,19 +129,18 @@ nav ul li a:hover {
 }
 
 .info-container h3 {
-  font-size: 1.4rem; /* Adjusted font size */
+  font-size: 1.4rem;
 }
 
 .info-container h4 {
   font-size: 1.2rem;
-  color: #4a68aa; /* Added different font color for affiliation */
+  color: #4a68aa;
 }
 
 .social-links {
   display: flex;
-  margin-bottom: 20px;
-  width: 100%; /* Added width to spread the social links */
-  justify-content: space-between; /* Spread the social links */
+  width: 100%; /* Adjusted width */
+  justify-content: space-between;
 }
 
 .social-links a {
@@ -177,13 +178,13 @@ nav ul li a:hover {
 .bio-container h4 + ul {
   margin-top: 0;
   margin-bottom: 20px;
-  list-style: none;
+  list-style: disc; /* Added bullet points */
+  padding-left: 1.5rem; /* Added padding for bullet points */
 }
 
 .bio-container li {
   margin-bottom: 5px;
 }
-
 
 /* Education Section */
 #education {
