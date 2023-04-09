@@ -286,7 +286,7 @@ a:hover {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 10px;
-  color: brown;
+  color: light brown;
 }
 .timeline-item .timeline-content p {
   font-size: 1rem;
@@ -323,7 +323,7 @@ a:hover {
   content: '';
   position: absolute;
   top: 0;
-  left: calc(50% - 1px);
+  left: 50%;
   width: 2px;
   height: 100%;
   background-color: black;
