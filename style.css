@@ -94,12 +94,14 @@ nav ul li a:hover {
 .about-content {
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: flex-start;
+  gap: 2%; /* Added gap between left and right sections */
 }
 
-.left-section, .right-section {
+.left-section,
+.right-section {
   flex: 1;
-  max-width: 50%;
+  max-width: 49%; /* Adjusted to accommodate the gap */
 }
 
 .img-container {
@@ -107,7 +109,7 @@ nav ul li a:hover {
 }
 
 .img-container img {
-  max-width: 100%;
+  max-width: 70%; /* Adjusted the image size */
   height: auto;
   border-radius: 5px;
 }
@@ -125,16 +127,19 @@ nav ul li a:hover {
 }
 
 .info-container h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem; /* Adjusted font size */
 }
 
 .info-container h4 {
   font-size: 1.2rem;
+  color: #4a68aa; /* Added different font color for affiliation */
 }
 
 .social-links {
   display: flex;
   margin-bottom: 20px;
+  width: 100%; /* Added width to spread the social links */
+  justify-content: space-between; /* Spread the social links */
 }
 
 .social-links a {
