@@ -173,7 +173,9 @@ nav ul li a:hover {
 }
 
 .social-links img {
-  height: 40px;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
 }
 
 .bio-container {
@@ -615,21 +617,4 @@ a:hover {
     font-size: 1rem;
     color: #666;
     margin-bottom: 0;
-}
-
-
-.social-links {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    margin: 50px auto 0;
-}
-
-.social-links a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.social-links i {
-    font-size: 24px;
 }
