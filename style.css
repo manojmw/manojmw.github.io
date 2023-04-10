@@ -519,8 +519,9 @@ a:hover {
 .publication-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
     margin-top: 5px;
+    text-align: left;
 }
 
 .publication-links a {
