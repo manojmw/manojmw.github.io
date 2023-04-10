@@ -115,7 +115,8 @@ $(document).ready(function() {
 
         $('.publication').each(function() {
             var title = $(this).find('.pub-title').text().toLowerCase();
-            if (title.includes(searchTerm)) {
+            var type = $(this).find('.pub-type').text().toLowerCase();
+            if (title.includes(searchTerm) || type.includes(searchTerm)) {
                 $(this).show();
             } else {
                 $(this).hide();
@@ -130,3 +131,4 @@ $(document).ready(function() {
         }
     });
 });
+
