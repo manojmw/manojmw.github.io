@@ -621,3 +621,20 @@ a:hover {
     color: #666;
     margin-bottom: 0;
 }
+
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 50px auto 0;
+}
+
+.social-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-links i {
+    font-size: 24px;
+}
