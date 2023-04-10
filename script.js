@@ -18,25 +18,6 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 };
 
-// Form submission
-$(document).ready(function() {
-  $('#contact').submit(function(e) {
-    e.preventDefault();
-    $('.status').html('Sending...');
-    $.ajax({
-      url: 'contact.php',
-      method: 'post',
-      data: $(this).serialize(),
-      success: function(response) {
-        $('.status').html('Message sent!');
-        $('#contact')[0].reset();
-      },
-      error: function() {
-        $('.status').html('Failed to send message. Please try again later.');
-      }
-    });
-  });
-});
 
 // Awards Section
 $(document).ready(function() {
@@ -134,4 +115,14 @@ $(document).ready(function() {
     $('#search-publication, #type-select').on('input', function() {
         searchPublications();
     });
+});
+
+// Contact Section
+function createEmail(user, domain) {
+  return user + '@' + domain;
+}
+
+$(document).ready(function() {
+  $('#uni-email').text(createEmail('mwag8019', 'uni.sydney.edu.au'));
+  $('#cmri-email').text(createEmail('mwagle', 'cmri.org.au'));
 });
