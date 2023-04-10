@@ -335,10 +335,6 @@ a:hover {
   z-index: 1;
 }
 
-#experience .timeline .item.current::before {
-  background-color: #74e278;
-}
-
 #experience .timeline .work-info {
   position: relative;
   padding: 20px;
@@ -404,7 +400,7 @@ a:hover {
   width: 100%
 }
 
-#experience .timeline .item:first-child .circle {
+#experience .timeline .item.current .circle {
   border-color: Green;
 }
 
