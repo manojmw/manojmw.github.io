@@ -515,7 +515,12 @@ a:hover {
 .publication .pub-type {
     color: #888;
     margin-left: auto;
-    align-self: flex-start;
+    align-self: flex-end;
+}
+
+.publication > span {
+    max-width: 80%; /* Limit the publication title width to 80% */
+    display: inline-block; /* Allow the title to wrap */
 }
 
 .publication-links {
@@ -523,6 +528,7 @@ a:hover {
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 5px;
+    order: -1;
 }
 
 .publication-links a {
