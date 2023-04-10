@@ -75,3 +75,59 @@ $(document).ready(function() {
     });
 });
 
+// Publications Section
+$(document).ready(function() {
+    var publicationsToShow = 10;
+    var totalPublications = $('.publication').length;
+    $('#total-publications').text(totalPublications);
+
+    function updatePublicationsDisplay() {
+        $('.publication').each(function(index) {
+            if (index < publicationsToShow) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+
+        if (publicationsToShow >= totalPublications) {
+            $('#show-more-publications').hide();
+        } else {
+            $('#show-more-publications').show();
+        }
+    }
+
+    updatePublicationsDisplay();
+
+    $('#show-more-publications').on('click', function() {
+        publicationsToShow += 10;
+        updatePublicationsDisplay();
+    });
+
+    $('#view-all-publications').on('click', function(e) {
+        e.preventDefault();
+        publicationsToShow = totalPublications;
+        updatePublicationsDisplay();
+    });
+
+    // Search and filter functionality
+    $('#search-publication, #type-select').on('input change', function() {
+        var searchQuery = $('#search-publication').val().toLowerCase();
+        var selectedType = $('#type-select').val();
+
+        $('.publication').each(function() {
+            var title = $(this).find('span:first').text().toLowerCase();
+            var type = $(this).find('.pub-type').text();
+
+            if (title.indexOf(searchQuery) !== -1 && (!selectedType || type === selectedType)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+
+        // Update the total publications count
+        totalPublications = $('.publication:visible').length;
+        $('#total-publications').text(totalPublications);
+    });
+});
