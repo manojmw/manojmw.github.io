@@ -476,25 +476,33 @@ a:hover {
 
 
 /* Publications Section */
+.publications-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .publications-container {
-    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
     border-radius: 5px;
 }
 
 .publication {
     display: flex;
-    flex-direction: column;
-    background-color: #fff;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    margin-bottom: 15px;
 }
 
-.publication span:first-child {
+.publication .pub-title {
     font-size: 1.1em;
     margin-bottom: 5px;
 }
@@ -502,6 +510,7 @@ a:hover {
 .publication .pub-type {
     color: #888;
     margin-left: auto;
+    align-self: flex-start;
 }
 
 .publication-links {
@@ -509,16 +518,16 @@ a:hover {
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 .publication-links a {
     display: inline-block;
-    background-color: #0056b3;
-    color: white;
+    background-color: #adc8e6;
+    color: rgb(33, 26, 26);
     padding: 5px 10px;
     border-radius: 3px;
     text-decoration: none;
+    text-align: left;
 }
 
 .publication-links a.disabled {
@@ -536,21 +545,21 @@ a:hover {
     cursor: pointer;
 }
 
-#search-publications {
+#search-publication {
     width: 50%;
     padding: 5px;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
 
-.select-type {
+#type-select {
     width: auto;
     padding: 5px;
     border-radius: 3px;
     border: 1px solid #ccc;
     background-color: #fff;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .co-first-author {
