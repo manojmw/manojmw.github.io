@@ -508,7 +508,7 @@ a:hover {
 
 .publication .pub-title {
     font-size: 1em;
-    line-height: 1.7;
+    line-height: 1.8;
     margin-bottom: 5px;
 }
 
@@ -519,7 +519,7 @@ a:hover {
 }
 
 .publication > span {
-    max-width: 80%; /* Limit the publication title width to 80% */
+    max-width: 85%; /* Limit the publication title width to 80% */
     display: inline-block; /* Allow the title to wrap */
 }
 
@@ -527,14 +527,15 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 5px;
-    order: -1;
+    margin-top: 10px;
+    order: 1;
 }
 
 .publication-links a {
     display: inline-block;
     background-color: #4681f4;
     color: white;
+    font-size: 0.8em;
     padding: 5px 10px;
     border-radius: 3px;
     text-decoration: none;
