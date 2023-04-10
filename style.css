@@ -506,12 +506,6 @@ a:hover {
     width: 100%;
 }
 
-.publication .pub-title {
-    font-size: 1rem;
-    line-height: 2;
-    margin-bottom: 20px;
-}
-
 .publication .pub-type {
     color: #888;
     font-size: 0.8rem;
@@ -522,6 +516,9 @@ a:hover {
 .publication > span {
     max-width: 85%; /* Limit the publication title width to 80% */
     display: inline-block; /* Allow the title to wrap */
+    line-height: 2;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 .publication-links {
