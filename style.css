@@ -475,18 +475,18 @@ a:hover {
 }
 
 /* Publications Section */
-#publications {
-    background-color: #f5f5f5;
-}
-
 .publications-summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .publications-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f1f1f1;
     padding: 20px;
     border-radius: 5px;
 }
@@ -494,80 +494,74 @@ a:hover {
 .publication {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    gap: 10px;
+    width: 100%;
 }
 
-.pub-title {
-    font-size: 1em;
+.publication .pub-title {
+    font-size: 1.1em;
     margin-bottom: 5px;
+}
+
+.publication .pub-type {
+    color: #888;
+    margin-left: auto;
 }
 
 .pub-links {
     display: flex;
-    gap: 10px;
-    font-size: 0.85em;
-    margin-bottom: 5px;
+    flex-wrap: wrap;
 }
 
 .pub-links a {
     display: inline-block;
-    color: #888;
+    background-color: #0056b3;
+    color: white;
     padding: 5px 10px;
-    border: 1px solid #ccc;
     border-radius: 3px;
     text-decoration: none;
     margin-right: 5px;
+    margin-bottom: 5px;
 }
 
-.pub-links a[data-href] {
-    border-color: #0056b3;
-    color: #0056b3;
-}
-
-.pub-links a[data-href]:hover {
-    background-color: #0056b3;
-    color: #ffffff;
-}
-
-.pub-type {
-    font-size: 0.9em;
+.pub-links a.disabled {
+    background-color: #ccc;
     color: #888;
-    align-self: flex-end;
+    pointer-events: none;
+}
+
+#show-more-pubs {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-publications {
+    width: 70%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.select-type {
+    width: auto;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .co-first-author {
-    margin-top: 10px;
-    font-size: 0.8em;
-    color: #444;
     text-align: left;
-}
-
-.search-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.search-container input {
-    width: 30%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.search-container select {
-    width: auto;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    margin-top: 10px;
 }
 
 
