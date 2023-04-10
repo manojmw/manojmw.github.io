@@ -474,8 +474,11 @@ a:hover {
     margin-top: 10px;
 }
 
-
 /* Publications Section */
+#publications {
+    background-color: #f5f5f5;
+}
+
 .publications-summary {
     display: flex;
     justify-content: space-between;
@@ -484,7 +487,6 @@ a:hover {
 }
 
 .publications-container {
-    background-color: #f5f5f5;
     padding: 20px;
     border-radius: 5px;
 }
@@ -497,7 +499,7 @@ a:hover {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -509,17 +511,26 @@ a:hover {
 .pub-links {
     display: flex;
     gap: 10px;
-    font-size: 0.9em;
+    font-size: 0.85em;
     margin-bottom: 5px;
 }
 
 .pub-links a {
     color: #888;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.pub-links a[data-href] {
+    border-color: #0056b3;
+    color: #0056b3;
 }
 
 .pub-links a[data-href]:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    background-color: #0056b3;
+    color: #ffffff;
 }
 
 .pub-type {
@@ -543,14 +554,14 @@ a:hover {
 }
 
 .search-container input {
-    width: 100%;
+    width: calc(100% - 10px);
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
 .search-container select {
-    width: 100%;
+    width: auto;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
