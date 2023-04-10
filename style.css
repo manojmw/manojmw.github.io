@@ -315,6 +315,10 @@ a:hover {
   color: #333;
 }
 
+#experience .timeline {
+  position: relative;
+}
+
 #experience .item {
   display: flex;
 }
