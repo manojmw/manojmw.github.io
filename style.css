@@ -525,7 +525,7 @@ a:hover {
 
 .publication-links a {
     display: inline-block;
-    background-color: #ffbd03;
+    background-color: lightyellow;
     color: black;
     padding: 5px 10px;
     border-radius: 3px;
