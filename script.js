@@ -89,33 +89,31 @@ $(document).ready(function() {
                 $(this).hide();
             }
         });
-
         if (publicationsToShow >= totalPublications) {
-            $('#show-more-pubs').hide();
+            $('#show-more-publications').hide();
         } else {
-            $('#show-more-pubs').show();
+            $('#show-more-publications').show();
         }
     }
 
     updatePublicationsDisplay();
 
-    $('#show-more-pubs').on('click', function() {
+    $('#show-more-publications').on('click', function() {
         publicationsToShow += 10;
         updatePublicationsDisplay();
     });
 
-    $('#view-all-pubs').on('click', function(e) {
+    $('#view-all-publications').on('click', function(e) {
         e.preventDefault();
         publicationsToShow = totalPublications;
         updatePublicationsDisplay();
     });
 
-    $('#search-publications').on('input', function() {
+    $('#search-publication').on('input', function() {
         var searchTerm = $(this).val().toLowerCase();
-
         $('.publication').each(function() {
             var title = $(this).find('.pub-title').text().toLowerCase();
-            var type = $(this).find('.pub-type').text().toLowerCase();
+            var type = $(this).find('.type').text().toLowerCase();
             if (title.includes(searchTerm) || type.includes(searchTerm)) {
                 $(this).show();
             } else {
@@ -123,12 +121,4 @@ $(document).ready(function() {
             }
         });
     });
-
-    $('#search-publications').on('keypress', function(e) {
-        if (e.which == 13) {
-            e.preventDefault();
-            $(this).blur();
-        }
-    });
 });
-
