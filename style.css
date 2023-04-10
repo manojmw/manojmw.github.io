@@ -515,6 +515,8 @@ a:hover {
 .pub-links {
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
 }
 
 .pub-links a {
@@ -524,8 +526,6 @@ a:hover {
     padding: 5px 10px;
     border-radius: 3px;
     text-decoration: none;
-    margin-right: 5px;
-    margin-bottom: 5px;
 }
 
 .pub-links a.disabled {
@@ -544,7 +544,7 @@ a:hover {
 }
 
 #search-publications {
-    width: 70%;
+    width: 50%;
     padding: 5px;
     border-radius: 3px;
     border: 1px solid #ccc;
@@ -557,6 +557,7 @@ a:hover {
     border: 1px solid #ccc;
     background-color: #fff;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .co-first-author {
