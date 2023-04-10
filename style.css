@@ -576,34 +576,33 @@ a:hover {
     margin-top: 10px;
 }
 
-
-/* Contact Section */
 /* Contact Section */
 #contact {
     background-color: #ffffff;
     padding: 100px 0;
 }
+
 #contact h2 {
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 50px;
     color: #333;
 }
+
 .contact-items {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 40px;
     justify-content: center;
 }
+
 .contact-item {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 0 1 calc(50% - 40px);
-    display: flex;
-    align-items: center;
 }
+
 .contact-icon {
     font-size: 2rem;
     background-color: #4caf50;
@@ -612,10 +611,13 @@ a:hover {
     color: #ffffff;
     margin-right: 20px;
 }
+
 .contact-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
     margin-bottom: 10px;
 }
+
 .contact-info p {
     font-size: 1rem;
     color: #666;
