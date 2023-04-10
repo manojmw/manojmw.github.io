@@ -319,55 +319,39 @@ a:hover {
   position: relative;
 }
 
-#experience .item {
-  display: flex;
+#experience .timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(33, 33, 236);
 }
 
-#experience .item-side {
-  margin: 0 40px 28px 20px;
+#experience .timeline .item {
   position: relative;
 }
 
-#experience .item-main {
-  margin-bottom: 40px;
-}
-
-#experience .circle {
-  width: 18px;
-  height: 18px;
-  border: 5px solid rgba(203, 203, 203, 1);
-  border-radius: 50%;
-}
-
-#experience .line {
+#experience .timeline-item::before {
+  content: "";
   position: absolute;
-  background: #CBCBCB;
-  width: 2px;
-  top: 28px;
-  left: 13px;
-  height: 100%;
+  top: 15px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-#experience p {
-  width: 529px;
-  height: 32px;
-  font-size: 16px;
-  color: rgba(16, 45, 64, 1);
-  line-height: 32px;
-}
-
-#experience .item:first-child .circle {
-  border-color: Green;
-}
-
-#experience .item:last-child .line {
-  display: none;
+#experience .timeline .item.current::before {
+  background-color: #74e278;
 }
 
 #experience .timeline .work-info {
   position: relative;
   padding: 20px;
-  margin-left: 70px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -395,10 +379,13 @@ a:hover {
   color: #666;
 }
 
+#experience .timeline .work-info p:not(:first-child) {
+  display: block;
+}
+
 #experience .timeline .work-description {
   position: relative;
   padding: 20px;
-  margin-left: 70px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -410,6 +397,47 @@ a:hover {
   margin-bottom: 0;
   color: #666;
   line-height: 1.5;
+}
+
+/* New styles */
+#experience .item {
+  display: flex;
+}
+
+#experience .item-side {
+  margin: 0 40px 28px 20px;
+  position: relative;
+}
+
+#experience .item-main {
+  margin-bottom: 40px;
+}
+
+#experience .timeline .item:first-child .circle {
+  border-color: Green;
+}
+
+#experience .timeline .item:last-child .line {
+  display: none;
+}
+
+#experience .circle {
+  width: 18px;
+  height: 18px;
+  border: 5px solid rgba(203, 203, 203, 1);
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+#experience .line {
+  position: absolute;
+  background: #CBCBCB;
+  width: 2px;
+  top: 28px;
+  left: 13px;
+  height: 100%;
 }
 
 
