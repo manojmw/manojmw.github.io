@@ -449,9 +449,15 @@ a:hover {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: #ffffff; 
     width: 100%;
     box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* box-shadow for a subtle 3D effect */
+    transition: box-shadow 0.3s ease; /* Added transition for smooth box-shadow change */
+}
+
+.award:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increased box-shadow size on hover */
 }
 
 .award .year {
