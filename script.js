@@ -82,14 +82,18 @@ $(document).ready(function() {
     $('#total-publications').text(totalPublications);
 
     function updatePublicationsDisplay() {
+        var count = 0;
         $('.publication').each(function(index) {
             if (index < publicationsToShow) {
                 $(this).show();
+                count++;
             } else {
                 $(this).hide();
             }
         });
-        if (publicationsToShow >= totalPublications) {
+        $('#total-publications-display').text(count);
+
+        if (publicationsToShow >= totalPublications || totalPublications <= 10) {
             $('#show-more-publications').hide();
         } else {
             $('#show-more-publications').show();
@@ -109,16 +113,25 @@ $(document).ready(function() {
         updatePublicationsDisplay();
     });
 
-    $('#search-publication').on('input', function() {
-        var searchTerm = $(this).val().toLowerCase();
+    function searchPublications() {
+        var searchTerm = $('#search-publication').val().toLowerCase();
+        var selectedType = $('#type-select').val().toLowerCase();
+
         $('.publication').each(function() {
-            var title = $(this).find('.pub-title').text().toLowerCase();
-            var type = $(this).find('.type').text().toLowerCase();
-            if (title.includes(searchTerm) || type.includes(searchTerm)) {
+            var title = $(this).find('span').first().text().toLowerCase();
+            var type = $(this).find('.pub-type').text().toLowerCase();
+            var matchesSearchTerm = searchTerm === '' || title.includes(searchTerm);
+            var matchesSelectedType = selectedType === '' || type === selectedType;
+
+            if (matchesSearchTerm && matchesSelectedType) {
                 $(this).show();
             } else {
                 $(this).hide();
             }
         });
+    }
+
+    $('#search-publication, #type-select').on('input', function() {
+        searchPublications();
     });
 });
