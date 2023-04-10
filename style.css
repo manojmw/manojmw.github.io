@@ -514,11 +514,11 @@ a:hover {
 }
 
 .publication > span {
-    max-width: 85%; /* Limit the publication title width to 80% */
+    max-width: 87%; /* Limit the publication title width to 80% */
     display: inline-block; /* Allow the title to wrap */
-    line-height: 2;
+    line-height: 1.6;
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .publication-links {
