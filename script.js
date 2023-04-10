@@ -1,3 +1,6 @@
+// Manoj M Wagle
+// 9 Apr 2023
+
 // Smooth scrolling
 $('.nav-link').click(function() {
   $('html, body').animate({
