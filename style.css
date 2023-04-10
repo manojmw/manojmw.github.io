@@ -315,27 +315,27 @@ a:hover {
   color: #333;
 }
 
-.item {
+#experience .item {
   display: flex;
 }
 
-.item-side {
+#experience .item-side {
   margin: 0 40px 28px 20px;
   position: relative;
 }
 
-.item-main {
+#experience .item-main {
   margin-bottom: 40px;
 }
 
-.circle {
+#experience .circle {
   width: 18px;
   height: 18px;
   border: 5px solid rgba(203, 203, 203, 1);
   border-radius: 50%;
 }
 
-.line {
+#experience .line {
   position: absolute;
   background: #CBCBCB;
   width: 2px;
@@ -344,7 +344,7 @@ a:hover {
   height: 100%;
 }
 
-p {
+#experience p {
   width: 529px;
   height: 32px;
   font-size: 16px;
@@ -352,11 +352,11 @@ p {
   line-height: 32px;
 }
 
-.item:first-child .circle {
+#experience .item:first-child .circle {
   border-color: Green;
 }
 
-.item:last-child .line {
+#experience .item:last-child .line {
   display: none;
 }
 
