@@ -476,51 +476,84 @@ a:hover {
 
 
 /* Publications Section */
-.publications-summary,
+.publications-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.publications-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.publication {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pub-title {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.pub-links {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.pub-links a {
+    color: #888;
+}
+
+.pub-links a[data-href]:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.pub-type {
+    font-size: 0.9em;
+    color: #888;
+    align-self: flex-end;
+}
+
+.co-first-author {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #444;
+    text-align: left;
+}
+
 .search-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
-.publications-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.publication {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: white;
+
+.search-container input {
     width: 100%;
-    position: relative;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
-.publication .pub-type {
-    color: #888;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-}
-.publication a {
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid #0056b3;
-    border-radius: 5px;
-    color: #0056b3;
-    background-color: white;
-    margin-right: 5px;
-}
-.publication a.disabled {
-    color: #888;
-    border-color: #888;
-}
-.co-first-author {
-    text-align: left;
-    margin-top: 10px;
+
+.search-container select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 
