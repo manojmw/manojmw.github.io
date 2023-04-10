@@ -119,9 +119,9 @@ $(document).ready(function() {
 
         $('.publication').each(function() {
             var title = $(this).find('span').first().text().toLowerCase();
-            var type = $(this).find('.pub-type').text().toLowerCase();
+            var type = $(this).find('.pub-type.text().toLowerCase();
             var matchesSearchTerm = searchTerm === '' || title.includes(searchTerm);
-            var matchesSelectedType = selectedType === '' || type === selectedType;
+            var matchesSelectedType = selectedType === '' || type.toLowerCase().includes(selectedType);
 
             if (matchesSearchTerm && matchesSelectedType) {
                 $(this).show();
