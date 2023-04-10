@@ -476,7 +476,7 @@ a:hover {
 
 
 /* Publications Section */
-# publication {
+#publications {
     background-color: #f7f7f7;
 }	
 	
@@ -526,8 +526,8 @@ a:hover {
 
 .publication-links a {
     display: inline-block;
-    background-color: lightyellow;
-    color: black;
+    background-color: lightblack;
+    color: white;
     padding: 5px 10px;
     border-radius: 3px;
     text-decoration: none;
