@@ -323,7 +323,7 @@ a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 10px;
   width: 2px;
   height: 100%;
   background-color: rgb(33, 33, 236);
@@ -347,7 +347,7 @@ a:hover {
 }
 
 #experience .timeline .item.current::before {
-  background-color: #74e278;
+  background-color: #6ddc71;
 }
 
 #experience .timeline .work-info {
