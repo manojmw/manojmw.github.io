@@ -507,13 +507,14 @@ a:hover {
 }
 
 .publication .pub-title {
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 2;
     margin-bottom: 20px;
 }
 
 .publication .pub-type {
     color: #888;
+    font-size: 0.8rem;
     margin-left: auto;
     align-self: flex-end;
 }
@@ -535,7 +536,7 @@ a:hover {
     display: inline-block;
     background-color: #4681f4;
     color: white;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     padding: 5px 10px;
     border-radius: 3px;
     text-decoration: none;
