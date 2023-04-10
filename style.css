@@ -474,6 +474,7 @@ a:hover {
     margin-top: 10px;
 }
 
+
 /* Publications Section */
 .publications-summary {
     display: flex;
@@ -493,7 +494,7 @@ a:hover {
 
 .publication {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
@@ -510,16 +511,17 @@ a:hover {
 .publication .pub-type {
     color: #888;
     margin-left: auto;
+    align-self: flex-start;
 }
 
-.pub-links {
+.publication-links {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 5px;
 }
 
-.pub-links a {
+.publication-links a {
     display: inline-block;
     background-color: #0056b3;
     color: white;
@@ -528,13 +530,13 @@ a:hover {
     text-decoration: none;
 }
 
-.pub-links a.disabled {
+.publication-links a.disabled {
     background-color: #ccc;
     color: #888;
     pointer-events: none;
 }
 
-#show-more-pubs {
+#show-more-publications {
     background-color: #0056b3;
     color: white;
     padding: 10px;
@@ -543,14 +545,14 @@ a:hover {
     cursor: pointer;
 }
 
-#search-publications {
+#search-publication {
     width: 50%;
     padding: 5px;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
 
-.select-type {
+#type-select {
     width: auto;
     padding: 5px;
     border-radius: 3px;
