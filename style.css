@@ -319,35 +319,49 @@ a:hover {
   position: relative;
 }
 
-#experience .timeline::before {
-  content: "";
+#experience .item {
+  display: flex;
+}
+
+#experience .item-side {
+  margin: 0 40px 28px 0;
+  position: relative;
+}
+
+#experience .item-main {
+  margin-bottom: 40px;
+}
+
+#experience .timeline .item:first-child .circle {
+  border-color: green;
+}
+
+#experience .timeline .item:last-child .line {
+  display: none;
+}
+
+#experience .circle {
+  width: 18px;
+  height: 18px;
+  border: 5px solid rgba(203, 203, 203, 1);
+  border-radius: 50%;
   position: absolute;
-  top: 0;
-  left: 10px;
+  top: 15px;
+  left: -40px;
+}
+
+#experience .line {
+  position: absolute;
+  background: #CBCBCB;
   width: 2px;
+  top: 28px;
+  left: -22px;
   height: 100%;
-  background-color: rgb(33, 33, 236);
 }
 
 #experience .timeline .item {
   position: relative;
   margin-bottom: 80px;
-}
-
-#experience .timeline .item::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  background-color: #333;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-#experience .timeline .item.current::before {
-  background-color: #6ddc71;
 }
 
 #experience .timeline .work-info {
