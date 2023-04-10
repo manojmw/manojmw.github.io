@@ -37,3 +37,38 @@ $(document).ready(function() {
     });
   });
 });
+
+// Awards Section
+$(document).ready(function() {
+    var awardsToShow = 10;
+    var totalAwards = $('.award').length;
+    $('#total-awards').text(totalAwards);
+
+    function updateAwardsDisplay() {
+        $('.award').each(function(index) {
+            if (index < awardsToShow) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+        if (awardsToShow >= totalAwards) {
+            $('#show-more').hide();
+        } else {
+            $('#show-more').show();
+        }
+    }
+
+    updateAwardsDisplay();
+
+    $('#show-more').on('click', function() {
+        awardsToShow += 10;
+        updateAwardsDisplay();
+    });
+
+    $('#view-all').on('click', function(e) {
+        e.preventDefault();
+        awardsToShow = totalAwards;
+        updateAwardsDisplay();
+    });
+});
