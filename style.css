@@ -439,7 +439,7 @@ a:hover {
 .awards-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
 }
 
 .award {
@@ -447,7 +447,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
     background-color: #ffffff; 
     width: 100%;
