@@ -57,6 +57,8 @@ $(document).ready(function() {
         } else {
             $('#show-more').show();
         }
+        var displayedAwards = `1-${Math.min(awardsToShow, totalAwards)}`;
+        $('#displayed-awards').text(displayedAwards);
     }
 
     updateAwardsDisplay();
