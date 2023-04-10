@@ -487,7 +487,6 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: #f1f1f1;
     padding: 20px;
     border-radius: 5px;
 }
@@ -495,7 +494,7 @@ a:hover {
 .publication {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: #f7f7f7;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
@@ -523,11 +522,12 @@ a:hover {
 
 .publication-links a {
     display: inline-block;
-    background-color: #0056b3;
-    color: white;
+    background-color: #adc8e6;
+    color: rgb(33, 26, 26);
     padding: 5px 10px;
     border-radius: 3px;
     text-decoration: none;
+    text-align: left;
 }
 
 .publication-links a.disabled {
@@ -559,7 +559,7 @@ a:hover {
     border: 1px solid #ccc;
     background-color: #fff;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .co-first-author {
