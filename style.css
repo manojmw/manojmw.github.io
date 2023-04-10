@@ -476,6 +476,10 @@ a:hover {
 
 
 /* Publications Section */
+# publication {
+    background-color: #f7f7f7;
+}	
+	
 .publications-summary {
     display: flex;
     justify-content: space-between;
@@ -494,7 +498,6 @@ a:hover {
 .publication {
     display: flex;
     flex-wrap: wrap;
-    background-color: #f7f7f7;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
