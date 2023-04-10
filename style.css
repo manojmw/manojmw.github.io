@@ -334,7 +334,7 @@ a:hover {
   margin-bottom: 80px;
 }
 
-#experience .timeline-item::before {
+#experience .timeline .item::before {
   content: "";
   position: absolute;
   top: 15px;
