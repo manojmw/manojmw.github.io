@@ -427,6 +427,7 @@ a:hover {
   height: 100%;
 }
 
+
 /* Awards Section */
 .awards-summary {
     display: flex;
@@ -462,7 +463,9 @@ a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
+
 
 /* Publications Section */
 #publications {
