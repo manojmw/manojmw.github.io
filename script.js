@@ -101,6 +101,27 @@ $(document).ready(function() {
         }
     }
 
+    function filterPublications() {
+        var searchQuery = $('#search-publication').val().toLowerCase();
+        var selectedType = $('#type-select').val();
+
+        $('.publication').each(function() {
+            var title = $(this).find('.pub-title').text().toLowerCase();
+            var type = $(this).find('.pub-type').text();
+
+            if ((searchQuery === '' || title.includes(searchQuery)) && (selectedType === '' || type === selectedType)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+
+        totalPublications = $('.publication:visible').length;
+        $('#total-publications-display').text(totalPublications);
+        publicationsToShow = 10;
+        updatePublicationsDisplay();
+    }
+
     updatePublicationsDisplay();
 
     $('#show-more-publications').on('click', function() {
@@ -111,4 +132,9 @@ $(document).ready(function() {
     $('#view-all-publications').on('click', function(e) {
         e.preventDefault();
         publicationsToShow = totalPublications;
-        updatePublic
+        updatePublicationsDisplay();
+    });
+
+    $('#search-publication').on('input', filterPublications);
+    $('#type-select').on('change', filterPublications);
+});
