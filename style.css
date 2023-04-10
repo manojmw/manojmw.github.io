@@ -319,16 +319,6 @@ a:hover {
   position: relative;
 }
 
-#experience .timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 15px;
-  width: 2px;
-  height: 100%;
-  background-color: rgb(33, 33, 236);
-}
-
 #experience .timeline .item {
   position: relative;
 }
