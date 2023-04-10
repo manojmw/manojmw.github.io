@@ -592,8 +592,7 @@ a:hover {
 .contact-items {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    justify-content: center;
+    gap: 60px;
 }
 
 .contact-item {
