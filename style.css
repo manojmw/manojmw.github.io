@@ -2,20 +2,13 @@
 /* 9 Apr 2023 */
 
 @media (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  body {
+    font-size: 0.8em;
   }
 
   .container img {
     max-width: 100%;
     height: auto;
-  }
-
-  .container p {
-    text-align: justify;
-    max-width: 90%;
   }
 }
 
