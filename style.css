@@ -1,68 +1,24 @@
 /* Manoj M Wagle */
 /* 9 Apr 2023 */
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container img {
     max-width: 100%;
-    padding: 40px 15px;
+    height: auto;
   }
 
-  .row {
-    flex-direction: column;
-  }
-
-  .col {
-    padding: 15px;
-  }
-
-  nav {
-    padding: 0 20px;
-  }
-
-  nav ul li {
-    margin-left: 15px;
-  }
-
-  .about-content {
-    flex-direction: column;
-  }
-
-  .left-section {
-    flex: 1;
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .right-section {
-    flex: 1;
-    padding: 0;
-  }
-
-  #education .timeline-item, #experience .timeline-item {
-    width: 100%;
-  }
-
-  #education .timeline-item:nth-child(even) {
-    margin-left: 0;
-  }
-
-  .awards-summary {
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 10px;
-  }
-
-  .publications-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contact-items {
-    flex-direction: column;
-    gap: 30px;
+  .container p {
+    text-align: justify;
+    max-width: 90%;
   }
 }
+
 
 body {
     background-color: #fff;
