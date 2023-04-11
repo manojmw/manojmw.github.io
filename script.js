@@ -113,15 +113,17 @@ $(document).ready(function () {
         $('#uni-email').text(createEmail('mwag8019', 'uni.sydney.edu.au'));
         $('#cmri-email').text(createEmail('mwagle', 'cmri.org.au'));
     });
+    
     function createEmail(user, domain) {
         return user + '@' + domain;
     }
-    const lastUpdatedDate = new Date().toLocaleDateString('en-US', {
+    
+    const lastUpdatedDate = new Date(document.lastModified).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
     });
-    $('#last-updated').text(lastUpdatedDate);
+
 
     // Smooth scrolling
     $('.nav-link').click(function () {
