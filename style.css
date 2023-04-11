@@ -450,6 +450,10 @@ a:hover {
 
 
 /* Awards Section */
+#awards {
+    padding: 100px 0;
+}
+
 .awards-summary {
     display: flex;
     justify-content: space-between;
