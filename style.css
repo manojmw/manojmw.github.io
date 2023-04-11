@@ -101,6 +101,10 @@ nav ul li a:hover {
     padding: 100px 0;
 }
 
+#about h2 {
+    font-size: 1.9rem;
+}
+
 .about-content {
     display: flex;
     flex-wrap: nowrap;
@@ -151,7 +155,6 @@ nav ul li a:hover {
 }
 
 .info-container h2 {
-    font-size: 1.7rem;
     margin-bottom: 20px;
 }
 
@@ -251,7 +254,7 @@ a:hover {
 }
 
 #education h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-top: 0;
     margin-bottom: 50px;
     color: #333;
@@ -331,6 +334,7 @@ a:hover {
 }
 
 #experience h2 {
+    font-size: 1.9rem;
     margin-top: 0;
     margin-bottom: 50px;
     color: #333;
@@ -454,6 +458,10 @@ a:hover {
     padding: 100px 0;
 }
 
+#awards h2 {
+    font-size: 1.9rem;
+}
+
 .awards-summary {
     display: flex;
     justify-content: space-between;
@@ -507,6 +515,10 @@ a:hover {
 #publications {
     background-color: #f7f7f7;
     padding: 100px 0;
+}
+
+#publications h2 {
+    font-size: 1.9rem;
 }
 
 .publications-summary {
@@ -614,7 +626,7 @@ a:hover {
 }
 
 #contact h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-top: 0;
     margin-bottom: 50px;
     color: #333;
