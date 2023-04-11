@@ -24,7 +24,7 @@ window.onscroll = function () {
 
 // Awards Section
 $(document).ready(function () {
-    var awardsToShow = 10;
+    var awardsToShow = 6;
     var totalAwards = $('.award').length;
     $('#total-awards').text(totalAwards);
 
