@@ -48,7 +48,7 @@ $(document).ready(function () {
     updateAwardsDisplay();
 
     $('#show-more').on('click', function () {
-        awardsToShow += 10;
+        awardsToShow += 6;
         updateAwardsDisplay();
     });
 
