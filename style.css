@@ -1,6 +1,10 @@
 /* Manoj M Wagle */
 /* 9 Apr 2023 */
 
+html {
+  min-height: 100%;
+  position: relative;
+}
 
 body {
     background-color: #fff;
