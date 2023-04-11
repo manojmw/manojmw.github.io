@@ -1,6 +1,15 @@
 // Manoj M Wagle
 // 9 Apr 2023
 
+$(document).ready(function() {
+    $("#about-section").load("about.html");
+    $("#education-section").load("education.html");
+    $("#experience-section").load("experience.html");
+    $("#awards-section").load("awards.html");
+    $("#publications-section").load("publications.html");
+    $("#contact-section").load("contact.html");
+});
+
 // Smooth scrolling
 $('.nav-link').click(function () {
     $('html, body').animate({
