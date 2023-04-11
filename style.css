@@ -331,7 +331,6 @@ a:hover {
 }
 
 #experience h2 {
-    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 50px;
     color: #333;
@@ -503,6 +502,7 @@ a:hover {
 /* Publications Section */
 #publications {
     background-color: #f7f7f7;
+    padding: 100px 0;
 }
 
 .publications-summary {
