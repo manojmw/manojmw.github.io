@@ -5,7 +5,7 @@
 body {
     background-color: #fff;
     font-family: 'Roboto', Arial, sans-serif;
-    /* Changed font family to Roboto */
+    margin-bottom: 60px; /* Height of the footer */
 }
 
 h1 {
