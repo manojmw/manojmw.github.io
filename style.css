@@ -662,10 +662,11 @@ a:hover {
 }
 
 footer {
-  background-color: #333; 
-  color: #fff;
+  background-color: #fff; 
+  color: #666;;
   padding: 1rem 0;
   position: absolute;
   bottom: 0;
   width: 100%;
+  text-align: center;
 }
