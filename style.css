@@ -1,19 +1,6 @@
 /* Manoj M Wagle */
 /* 9 Apr 2023 */
 
-@media screen and (max-width: 768px) {
-  .left-section {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .right-section {
-    float: none;
-    width: 100%;
-  }
-}
-
 
 body {
     background-color: #fff;
