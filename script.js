@@ -4,14 +4,18 @@
 $(document).ready(function () {
     
     // Load sections
+    
     // About Section
     $("#about-section").load("about.html");
+    
     
     // Education Section
     $("#education-section").load("education.html");
     
+    
     // Experience Section
     $("#experience-section").load("experience.html");
+    
     
     // Awards Section
     $("#awards-section").load("awards.html", function () {
@@ -50,6 +54,7 @@ $(document).ready(function () {
             updateAwardsDisplay();
         });
     });
+    
 
     // Publications Section
     $("#publications-section").load("publications.html", function () {
@@ -108,6 +113,7 @@ $(document).ready(function () {
         });
     });
     
+    
     // Contact Section
     $("#contact-section").load("contact.html", function () {
         $('#uni-email').text(createEmail('mwag8019', 'uni.sydney.edu.au'));
@@ -124,7 +130,9 @@ $(document).ready(function () {
         day: 'numeric',
     });
 
+    document.getElementById('last-updated').textContent = lastUpdatedDate;
 
+    
     // Smooth scrolling
     $('.nav-link').click(function () {
         $('html, body').animate({
