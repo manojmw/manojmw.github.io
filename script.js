@@ -116,6 +116,12 @@ $(document).ready(function () {
     function createEmail(user, domain) {
         return user + '@' + domain;
     }
+    const lastUpdatedDate = new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+    $('#last-updated').text(lastUpdatedDate);
 
     // Smooth scrolling
     $('.nav-link').click(function () {
