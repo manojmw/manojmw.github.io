@@ -2,12 +2,12 @@
 /* 9 Apr 2023 */
 
 @media (max-width: 768px) {
-  body {
-    font-size: 0.8em;
+  html {
+    font-size: 3vw;
   }
 
   .container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 }
