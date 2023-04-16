@@ -2,21 +2,21 @@
 // 9 Apr 2023
 
 $(document).ready(function () {
-    
+
     // Load sections
-    
+
     // About Section
     $("#about-section").load("about.html");
-    
-    
+
+
     // Education Section
     $("#education-section").load("education.html");
-    
-    
+
+
     // Experience Section
     $("#experience-section").load("experience.html");
-    
-    
+
+
     // Awards Section
     $("#awards-section").load("awards.html", function () {
         var awardsToShow = 6;
@@ -54,7 +54,7 @@ $(document).ready(function () {
             updateAwardsDisplay();
         });
     });
-    
+
 
     // Publications Section
     $("#publications-section").load("publications.html", function () {
@@ -112,34 +112,57 @@ $(document).ready(function () {
             searchPublications();
         });
     });
-    
-    
+
+
     // Contact Section
     $("#contact-section").load("contact.html", function () {
         $('#uni-email').text(createEmail('mwag8019', 'uni.sydney.edu.au'));
         $('#cmri-email').text(createEmail('mwagle', 'cmri.org.au'));
-
-        // Call setLastUpdatedDate() after loading the contact section
-        setLastUpdatedDate();
     });
 
     function createEmail(user, domain) {
         return user + '@' + domain;
     }
 
-    // Set the last updated date
-    function setLastUpdatedDate() {
-        const lastUpdatedDate = new Date(document.lastModified).toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
+    // Add the last updated tracking code here
+    const trackedFiles = [
+        'about.html',
+        'education.html',
+        'experience.html',
+        'awards.html',
+        'publications.html',
+        'contact.html',
+    ];
+
+    let latestUpdate = new Date(0); // Initialize with a date far in the past
+
+    function fetchLastModified(file) {
+        return $.ajax({
+            type: 'HEAD',
+            url: file,
+            success: function (data, textStatus, xhr) {
+                const lastModified = new Date(xhr.getResponseHeader('Last-Modified'));
+                if (lastModified > latestUpdate) {
+                    latestUpdate = lastModified;
+                }
+            },
         });
-        const lastUpdatedElement = document.getElementById('last-updated');
-        if (lastUpdatedElement) {
-            lastUpdatedElement.textContent = lastUpdatedDate;
-        }
     }
 
+    function updateLastUpdated() {
+        const requests = trackedFiles.map(fetchLastModified);
+        $.when(...requests).done(function () {
+            const lastUpdatedDate = latestUpdate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+            });
+            document.getElementById('last-updated').textContent = lastUpdatedDate;
+        });
+    }
+
+    // Call the updateLastUpdated function
+    updateLastUpdated();
 
     // Smooth scrolling
     $('.nav-link').click(function () {
