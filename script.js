@@ -124,54 +124,29 @@ $(document).ready(function () {
         return user + '@' + domain;
     }
 
-    // Last updated tracking code
-    const trackedFiles = [
-        'about.html',
-        'education.html',
-        'experience.html',
-        'awards.html',
-        'publications.html',
-        'contact.html',
-    ];
-
-    let latestUpdate = new Date(0); 
-
-    function fetchLastModified(file) {
-        return $.ajax({
-            type: 'HEAD',
-            url: file,
-            success: function (data, textStatus, xhr) {
-                const lastModified = new Date(xhr.getResponseHeader('Last-Modified'));
-                if (lastModified > latestUpdate) {
-                    latestUpdate = lastModified;
-                }
-            },
+    function setLastUpdatedDate() {
+        const lastUpdated = '2023-04-16';
+        const lastUpdatedDate = new Date(lastUpdated).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
         });
+
+        document.getElementById('last-updated').textContent = lastUpdatedDate;
     }
 
-    function updateLastUpdated() {
-        const requests = trackedFiles.map(fetchLastModified);
-        $.when(...requests).done(function () {
-            const lastUpdatedDate = latestUpdate.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-            });
-            document.getElementById('last-updated').textContent = lastUpdatedDate;
-        });
-    }
-
-    // Call the updateLastUpdated function
-    updateLastUpdated();
-
+    setLastUpdatedDate();
+    
+    
     // Smooth scrolling
     $('.nav-link').click(function () {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 500);
-        return false;
-    });
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 500);
+            return false;
+        });
 
+    
     // Show/hide navbar
     let prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
