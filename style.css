@@ -20,9 +20,12 @@
         flex-wrap: wrap;
     }
 
-    .left-section,
+    .left-section {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
     .right-section {
-        flex: 0 0 100%;
         max-width: 100%;
     }
 
