@@ -1,6 +1,55 @@
 /* Manoj M Wagle */
 /* 9 Apr 2023 */
 
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 40px 10px;
+    }
+
+    nav {
+        padding: 0 20px;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    .about-content {
+        flex-wrap: wrap;
+    }
+
+    .left-section,
+    .right-section {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #education .timeline-item,
+    #education .timeline-item:nth-child(even) {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #education .timeline::before {
+        left: 20px;
+    }
+
+    #education .timeline-item::before {
+        left: 20px;
+    }
+
+    #experience .item {
+        flex-wrap: wrap;
+    }
+
+    #experience .item-side {
+        margin: 0 20px 28px 0;
+    }
+}
+
+
 html {
   min-height: 100%;
   position: relative;
