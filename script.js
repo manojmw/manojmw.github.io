@@ -124,7 +124,7 @@ $(document).ready(function () {
         return user + '@' + domain;
     }
 
-    // Add the last updated tracking code here
+    // Last updated tracking code
     const trackedFiles = [
         'about.html',
         'education.html',
@@ -134,7 +134,7 @@ $(document).ready(function () {
         'contact.html',
     ];
 
-    let latestUpdate = new Date(0); // Initialize with a date far in the past
+    let latestUpdate = new Date(0); 
 
     function fetchLastModified(file) {
         return $.ajax({
