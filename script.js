@@ -118,21 +118,29 @@ $(document).ready(function () {
     $("#contact-section").load("contact.html", function () {
         $('#uni-email').text(createEmail('mwag8019', 'uni.sydney.edu.au'));
         $('#cmri-email').text(createEmail('mwagle', 'cmri.org.au'));
+
+        // Call setLastUpdatedDate() after loading the contact section
+        setLastUpdatedDate();
     });
-    
+
     function createEmail(user, domain) {
         return user + '@' + domain;
     }
-    
-    const lastUpdatedDate = new Date(document.lastModified).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-    });
 
-    document.getElementById('last-updated').textContent = lastUpdatedDate;
+    // Set the last updated date
+    function setLastUpdatedDate() {
+        const lastUpdatedDate = new Date(document.lastModified).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+        });
+        const lastUpdatedElement = document.getElementById('last-updated');
+        if (lastUpdatedElement) {
+            lastUpdatedElement.textContent = lastUpdatedDate;
+        }
+    }
 
-    
+
     // Smooth scrolling
     $('.nav-link').click(function () {
         $('html, body').animate({
