@@ -180,14 +180,14 @@ nav ul li a:hover {
 
 .img-container {
     margin-bottom: 20px;
-    width: 250px; 
-    height: 250px;
+    width: 220px; 
+    height: 220px;
 }
 
 .img-container img {
     max-width: 70%;
-    width: 250px; 
-    height: 250px;
+    width: 220px; 
+    height: 220px;
     object-fit: contain;
     border-radius: 50%;
     display: block;
