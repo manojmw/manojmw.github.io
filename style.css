@@ -185,10 +185,10 @@ nav ul li a:hover {
 
 .img-container img {
     max-width: 100%;
-    width: 220px; 
-    height: 220px;
-    object-fit: contain;
-    border-radius: 50%;
+    width: 230px;  
+    height: 230px;   
+    object-fit: cover; 
+    border-radius: 50%; 
     display: block;
     margin-left: auto;
     margin-right: auto;
