@@ -187,7 +187,7 @@ nav ul li a:hover {
     max-width: 100%;
     width: 230px;  
     height: 230px;   
-    object-fit: cover; 
+    object-fit: contain; 
     border-radius: 50%; 
     display: block;
     margin-left: auto;
