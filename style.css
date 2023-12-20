@@ -184,9 +184,9 @@ nav ul li a:hover {
 }
 
 .img-container img {
-    max-width: 70%;
-    width: 200px; 
-    height: 200px;
+    max-width: 100%;
+    width: 220px; 
+    height: 220px;
     object-fit: contain;
     border-radius: 50%;
     display: block;
