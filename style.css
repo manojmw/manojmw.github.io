@@ -180,7 +180,8 @@ nav ul li a:hover {
 
 .img-container {
     margin-bottom: 20px;
-    width: 100%;
+    width: 250px; 
+    height: 250px;
 }
 
 .img-container img {
