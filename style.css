@@ -678,6 +678,19 @@ a:hover {
     margin-top: 10px;
 }
 
+/* Presentations Section */
+#presentations {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+#presentations h2 {
+    font-size: 1.9rem;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #333;
+}
+
 /* Contact Section */
 #contact {
     background-color: #ffffff;
