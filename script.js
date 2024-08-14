@@ -113,6 +113,9 @@ $(document).ready(function () {
         });
     });
 
+    // Presentations Section
+    $("#presentations-section").load("presentations.html");
+
 
     // Contact Section
     $("#contact-section").load("contact.html", function () {
