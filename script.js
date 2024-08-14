@@ -135,6 +135,7 @@ $(document).ready(function () {
         'experience.html',
         'awards.html',
         'publications.html',
+        'presentations.html',
         'contact.html',
     ];
 
