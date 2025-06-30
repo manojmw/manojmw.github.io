@@ -113,6 +113,9 @@ $(document).ready(function () {
         });
     });
 
+    // Professional Contributions Section
+    $("#professionalcontributions-section").load("professionalcontributions.html");
+
     // Presentations Section
     $("#presentations-section").load("presentations.html");
 
