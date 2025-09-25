@@ -168,7 +168,7 @@ body::after {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(30, 41, 59, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-color);
@@ -207,20 +207,20 @@ body::after {
 
 .nav-menu li a {
   text-decoration: none;
-  color: var(--text-secondary);
+  color: rgba(248, 250, 252, 0.9);
   font-weight: 600;
   padding: 0.875rem 1.25rem;
   border-radius: var(--border-radius-md);
   transition: all var(--transition-normal);
   position: relative;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   background: transparent;
 }
 
-.nav-menu li a:hover,
+.nav-menu li a:hover, 
 .nav-menu li a.active {
-  color: var(--primary-color);
-  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-light);
+  background: rgba(99, 102, 241, 0.2);
   transform: translateY(-2px);
 }
 
@@ -259,7 +259,7 @@ body::after {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: var(--text-primary);
+  background: var(--text-light);
   margin: 3px 0;
   transition: var(--transition-normal);
   border-radius: 1.5px;
