@@ -56,19 +56,15 @@ function loadSections() {
     const totalSections = sections.length;
     
     sections.forEach(section => {
-        $(`#${section}-section`).load(`${section}.html`, function(response, status) {
-            if (status === "success") {
-                loadedSections++;
-                
-                // Initialize section-specific functionality
-                initializeSectionFeatures(section);
-                
-                // Check if all sections are loaded
-                if (loadedSections === totalSections) {
-                    onAllSectionsLoaded();
-                }
-            } else {
-                console.warn(`Failed to load ${section}.html`);
+        $(`#${section}-section`).load(`${section}.html`, function() {
+            loadedSections++;
+            
+            // Initialize section-specific functionality
+            initializeSectionFeatures(section);
+            
+            // Check if all sections are loaded
+            if (loadedSections === totalSections) {
+                onAllSectionsLoaded();
             }
         });
     });
@@ -77,20 +73,20 @@ function loadSections() {
 function initializeSectionFeatures(section) {
     switch(section) {
         case 'awards':
-            initializeAwards();
+            setTimeout(() => initializeAwards(), 100);
             break;
         case 'publications':
-            initializePublications();
+            setTimeout(() => initializePublications(), 100);
             break;
         case 'contact':
-            initializeContact();
+            setTimeout(() => initializeContact(), 100);
             break;
     }
 }
 
 function onAllSectionsLoaded() {
     // Setup intersection observer for animations
-    setupIntersectionObserver();
+    setTimeout(() => setupIntersectionObserver(), 500);
     
     // Update navigation active states
     updateActiveNavigation();
@@ -239,11 +235,9 @@ function setupIntersectionObserver() {
     }, observerOptions);
     
     // Observe elements when they exist
-    setTimeout(() => {
-        $('.scroll-animate').each(function() {
-            observer.observe(this);
-        });
-    }, 500);
+    $('.scroll-animate').each(function() {
+        observer.observe(this);
+    });
 }
 
 function checkScrollAnimations() {
