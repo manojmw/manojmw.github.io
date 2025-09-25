@@ -1121,7 +1121,7 @@ body::after {
 }
 
 .year-group h3 {
-  font-size: 1.5rem; 
+  font-size: 1.25rem; 
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 2rem;
