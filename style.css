@@ -838,7 +838,7 @@ body::after {
 }
 
 .year {
-  background: var(--gradient-primary);
+  background: transparent;
   color: white;
   border: none;
   padding: 0.35rem 0.65rem;
@@ -1047,7 +1047,7 @@ body::after {
 }
 
 .award .year {
-  background: var(--gradient-primary);
+  background: transparent;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: var(--border-radius-lg);
