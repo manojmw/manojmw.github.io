@@ -1272,7 +1272,7 @@ padding: 0;
 /* Contact */
 #contact {
   background: var(--bg-primary);
-  padding: 6rem 0 2rem;
+  padding: 6rem 0 0;
   margin-bottom: 0;
 }
 
