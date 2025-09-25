@@ -1580,3 +1580,8 @@ footer p {
     animation: none;
   }
 }
+
+
+.year, .award .year, .year-group h3 {
+    color: black !important;
+}
