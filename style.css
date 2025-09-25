@@ -1120,7 +1120,7 @@ body::after {
 }
 
 .year-group h3 {
-  font-size: 1.75rem; /* FIXED: Reduced from 2rem to 1.75rem */
+  font-size: 1.5rem; 
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 2rem;
