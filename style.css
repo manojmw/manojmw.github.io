@@ -764,15 +764,15 @@ body::after {
 }
 
 .circle {
-  width: 24px;   
-  height: 24px;  
+  width: 24px;
+  height: 24px;
   border: 3px solid var(--text-muted);
   border-radius: 50%;
   background: var(--bg-card);
   transition: all var(--transition-normal);
   position: relative;
   z-index: 2;
-  left: 13px; 
+  left: 12px;
 }
 
 .item.current .circle {
@@ -799,7 +799,7 @@ body::after {
   background: var(--text-muted);
   width: 3px;
   top: 28px;
-  left: 21px;
+  left: 23px;
   height: calc(100% + 40px);
   transition: background var(--transition-normal);
 }
