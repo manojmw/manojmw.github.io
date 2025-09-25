@@ -15,10 +15,10 @@
   --text-secondary: #475569;
   --text-muted: #64748b;
   --text-light: #f8fafc;
-  --bg-primary: rgba(255, 255, 255, 0.85);
-  --bg-secondary: rgba(248, 250, 252, 0.9);
-  --bg-tertiary: rgba(241, 245, 249, 0.8);
-  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-primary: rgba(255, 255, 255, 0.75);
+  --bg-secondary: rgba(248, 250, 252, 0.8);
+  --bg-tertiary: rgba(241, 245, 249, 0.7);
+  --bg-card: rgba(255, 255, 255, 0.85);
   --border-color: rgba(226, 232, 240, 0.8);
   --border-light: rgba(241, 245, 249, 0.6);
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -72,11 +72,11 @@ body::before {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.3) 0%, transparent 40%),
-    radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.25) 0%, transparent 40%),
-    radial-gradient(circle at 40% 60%, rgba(139, 92, 246, 0.2) 0%, transparent 40%),
-    radial-gradient(circle at 60% 20%, rgba(236, 72, 153, 0.25) 0%, transparent 40%),
-    radial-gradient(circle at 80% 40%, rgba(6, 182, 212, 0.2) 0%, transparent 40%);
+    radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.35) 0%, transparent 40%),
+    radial-gradient(circle at 40% 60%, rgba(139, 92, 246, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 60% 20%, rgba(236, 72, 153, 0.35) 0%, transparent 40%),
+    radial-gradient(circle at 80% 40%, rgba(6, 182, 212, 0.3) 0%, transparent 40%);
   animation: floatingOrbs 20s ease-in-out infinite;
   z-index: -1;
   pointer-events: none;
@@ -102,11 +102,11 @@ body::after {
   width: 100%;
   height: 100%;
   background-image: 
-    radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
-    radial-gradient(circle at 85% 75%, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    radial-gradient(circle at 45% 15%, rgba(255, 255, 255, 0.12) 1.5px, transparent 1.5px),
-    radial-gradient(circle at 75% 45%, rgba(255, 255, 255, 0.06) 2px, transparent 2px),
-    radial-gradient(circle at 25% 65%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.15) 2px, transparent 2px),
+    radial-gradient(circle at 85% 75%, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    radial-gradient(circle at 45% 15%, rgba(255, 255, 255, 0.18) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 75% 45%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 25% 65%, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
   background-size: 300px 300px, 200px 200px, 400px 400px, 250px 250px, 350px 350px;
   animation: sparkleMove 25s linear infinite;
   z-index: -1;
@@ -188,6 +188,10 @@ body::after {
   justify-content: center;
   padding: 0 1.25rem;
   height: 75px;
+}
+
+.nav-logo {
+  display: none;
 }
 
 .nav-menu {
@@ -355,6 +359,14 @@ body::after {
 .section {
   padding: 6rem 0;
   position: relative;
+  margin: 3rem 1rem;
+  border-radius: var(--border-radius-3xl);
+  box-shadow: var(--shadow-xl);
+  backdrop-filter: blur(10px);
+}
+
+.section:first-of-type {
+  margin-top: 75px;
 }
 
 .section-title {
@@ -381,12 +393,6 @@ body::after {
 #about {
   background: var(--bg-secondary);
   padding: 8rem 0 6rem;
-  margin-top: 75px;
-  position: relative;
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius-3xl);
-  margin: 75px 1rem 0;
-  box-shadow: var(--shadow-xl);
 }
 
 .about-content {
@@ -572,10 +578,6 @@ body::after {
 /* Education Section */
 #education {
   background: var(--bg-primary);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius-3xl);
-  margin: 0 1rem;
-  box-shadow: var(--shadow-xl);
 }
 
 .timeline {
@@ -725,10 +727,6 @@ body::after {
 /* Experience Section */
 #experience {
   background: var(--bg-secondary);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius-3xl);
-  margin: 0 1rem;
-  box-shadow: var(--shadow-xl);
 }
 
 .experience-timeline {
@@ -764,17 +762,18 @@ body::after {
 .circle {
   width: 18px;
   height: 18px;
-  border: 3px solid var(--secondary-color);
+  border: 3px solid var(--text-muted);
   border-radius: 50%;
   background: var(--bg-card);
   transition: all var(--transition-normal);
   position: relative;
   z-index: 2;
-  left: 6px;
+  left: 16px;
 }
 
 .item.current .circle {
   background: var(--secondary-color);
+  border-color: var(--secondary-color);
   box-shadow: 0 0 0 8px rgba(16, 185, 129, 0.2);
   animation: pulse 2s infinite;
 }
@@ -793,10 +792,10 @@ body::after {
 
 .line {
   position: absolute;
-  background: var(--secondary-color);
+  background: var(--text-muted);
   width: 3px;
   top: 28px;
-  left: 15px;
+  left: 24px;
   height: calc(100% + 40px);
   transition: background var(--transition-normal);
 }
@@ -889,10 +888,6 @@ body::after {
 /* Professional Contributions */
 #professionalcontributions {
   background: var(--bg-primary);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius-3xl);
-  margin: 0 1rem;
-  box-shadow: var(--shadow-xl);
 }
 
 #professionalcontributions h3 {
@@ -930,10 +925,6 @@ body::after {
 /* Presentations */
 #presentations {
   background: var(--bg-secondary);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius-3xl);
-  margin: 0 1rem;
-  box-shadow: var(--shadow-xl);
 }
 
 #presentations ul {
@@ -978,10 +969,6 @@ body::after {
 /* Awards */
 #awards {
   background: var(--bg-primary);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius-3xl);
-  margin: 0 1rem;
-  box-shadow: var(--shadow-xl);
 }
 
 .awards-summary {
@@ -1089,10 +1076,6 @@ body::after {
 /* Publications */
 #publications {
   background: var(--bg-secondary);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius-3xl);
-  margin: 0 1rem;
-  box-shadow: var(--shadow-xl);
 }
 
 .publications-summary {
@@ -1283,11 +1266,8 @@ body::after {
 /* Contact */
 #contact {
   background: var(--bg-primary);
-  backdrop-filter: blur(10px);
-  border-radius: var(--border-radius-3xl);
-  margin: 0 1rem;
-  box-shadow: var(--shadow-xl);
-  padding: 6rem 0;
+  padding: 6rem 0 10rem;
+  margin-bottom: 5rem;
 }
 
 .contact-items {
@@ -1420,6 +1400,11 @@ footer p {
 
   .section {
     padding: 4rem 0;
+    margin: 1rem 0.5rem;
+  }
+
+  .section:first-of-type {
+    margin-top: 75px;
   }
 
   .section-title {
@@ -1428,7 +1413,6 @@ footer p {
 
   #about {
     padding: 6rem 0 4rem;
-    margin: 75px 0.5rem 0;
   }
 
   .about-content {
@@ -1489,12 +1473,8 @@ footer p {
   }
 
   #contact {
-    padding: 4rem 0;
-    margin: 0 0.5rem;
-  }
-
-  #education, #experience, #professionalcontributions, #presentations, #awards, #publications {
-    margin: 0 0.5rem;
+    padding: 4rem 0 8rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -1561,7 +1541,12 @@ footer p {
   }
 
   #contact {
-    padding: 4rem 0;
+    padding: 4rem 0 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .section {
+    margin: 1rem 0.25rem;
   }
 }
 
