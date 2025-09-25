@@ -628,7 +628,7 @@ body::after {
 
 .timeline-content {
   background: var(--bg-card);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: var(--border-radius-2xl);
   box-shadow: var(--shadow-lg);
   border: 2px solid var(--border-color);
@@ -696,7 +696,7 @@ body::after {
 }
 
 .timeline-content h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
@@ -1162,9 +1162,8 @@ body::after {
 }
 
 .year-group h3 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: var(--text-primary);
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid var(--primary-color);
