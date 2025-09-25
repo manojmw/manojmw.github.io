@@ -79,6 +79,9 @@ function initializeSectionFeatures(section) {
     case 'publications':
       initializePublications();
       break;
+    case 'presentations': 
+      initializePresentations();
+      break;
     case 'contact':
       initializeContact();
       break;
@@ -426,6 +429,56 @@ function initializePublications() {
 
   $('#search-publication, #type-select').on('input change', debounce(searchAndFilterPublications, 300));
 }
+
+
+/* ------------------------------
+   Presentations 
+------------------------------ */
+function initializePresentations() {
+  let presentationsToShow = 4;
+  const totalPresentations = $('.award', '#presentations').length;
+
+  $('#total-presentations').text(totalPresentations);
+
+  function updatePresentationsDisplay() {
+    $('.award', '#presentations').each(function (index) {
+      if (index < presentationsToShow) {
+        $(this).show().addClass('scroll-animate');
+      } else {
+        $(this).hide();
+      }
+    });
+
+    const displayedPresentations = `1-${Math.min(presentationsToShow, $('.award:visible', '#presentations').length)}`;
+    $('#displayed-presentations').text(displayedPresentations);
+  }
+
+  updatePresentationsDisplay();
+
+  $('#show-more-presentations').on('click', function () {
+    if (presentationsToShow >= totalPresentations) {
+      // Show less
+      presentationsToShow = 4;
+      $(this).text('Show more');
+    } else {
+      // Show more  
+      presentationsToShow = totalPresentations;
+      $(this).text('Show less');
+    }
+    updatePresentationsDisplay();
+  });
+
+  $('#view-all-presentations').on('click', function (e) {
+    e.preventDefault();
+    if (presentationsToShow < totalPresentations) {
+      presentationsToShow = totalPresentations;
+      updatePresentationsDisplay();
+      $('#show-more-presentations').text('Show less');
+    }
+  });
+}
+
+
 
 /* ------------------------------
    Contact 
