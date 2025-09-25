@@ -15,9 +15,9 @@
   --text-secondary: #475569;
   --text-muted: #64748b;
   --text-light: #f8fafc;
-  --bg-primary: rgba(255, 255, 255, 0.75);
-  --bg-secondary: rgba(248, 250, 252, 0.8);
-  --bg-tertiary: rgba(241, 245, 249, 0.7);
+  --bg-primary: rgba(255, 255, 255, 0.92);
+  --bg-secondary: rgba(248, 250, 252, 0.94);
+  --bg-card: rgba(255, 255, 255, 0.96);
   --bg-card: rgba(255, 255, 255, 0.85);
   --border-color: rgba(226, 232, 240, 0.8);
   --border-light: rgba(241, 245, 249, 0.6);
