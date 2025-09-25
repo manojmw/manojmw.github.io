@@ -51,6 +51,8 @@ html {
   scroll-behavior: smooth;
   min-height: 100%;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -62,6 +64,8 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
+  margin: 0; 
+  padding: 0;
 }
 
 body::before {
@@ -1267,7 +1271,7 @@ body::after {
 #contact {
   background: var(--bg-primary);
   padding: 6rem 0 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 0;
 }
 
 .contact-items {
@@ -1334,6 +1338,9 @@ footer {
   text-align: center;
   font-weight: 500;
   box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+  margin: 0; 
+  position: relative;
+  z-index: 1;
 }
 
 footer p {
