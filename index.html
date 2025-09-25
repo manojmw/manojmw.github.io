@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-
+<html lang="en">
+    
 <!--9 Apr 2023-->
 <!--Manoj M Wagle-->
 
-<html>
-
 <head>
-    <title>Manoj M Wagle</title>
-    <link rel="stylesheet" type="text/css" href="https://manojmw.github.io/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3" crossorigin="anonymous">
-    <!-- Font Awesome by Dave Gandy - http://fontawesome.io -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3" crossorigin="anonymous">
+    <title>Manoj M Wagle - PhD Candidate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <meta name="google-site-verification" content="e3tNFnDGhbYC66VLQ1eonMnOg5e1jNtUq75irAsZVvU" />
+    <meta name="description" content="Manoj M Wagle - PhD Candidate specializing in Deep Learning, Computational Biology, and Single-cell omics at The University of Sydney">
 </head>
-
 <body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://manojmw.github.io/script.js"></script>
-
-    <header>
-        <nav>
-            <ul>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Manoj M Wagle</div>
+            <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -33,9 +29,32 @@
                 <li><a href="#presentations">Presentations</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#education" class="mobile-nav-link">Education</a></li>
+                <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+                <li><a href="#awards" class="mobile-nav-link">Awards</a></li>
+                <li><a href="#publications" class="mobile-nav-link">Publications</a></li>
+                <li><a href="#professionalcontributions" class="mobile-nav-link">Contributions</a></li>
+                <li><a href="#presentations" class="mobile-nav-link">Presentations</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Loading indicator -->
+    <div id="loading-indicator" class="loading-indicator">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Content Sections -->
     <div id="about-section"></div>
     <div id="education-section"></div>
     <div id="experience-section"></div>
@@ -45,6 +64,13 @@
     <div id="presentations-section"></div>
     <div id="contact-section"></div>
 
-</body>
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
