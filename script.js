@@ -287,12 +287,12 @@ function setupBackToTop() {
 ------------------------------ */
 function initializeAwards() {
   let awardsToShow = 6;
-  const totalAwards = $('.award').length;
+  const totalAwards = $('.award', '#awards').length;
 
   $('#total-awards').text(totalAwards);
 
   function updateAwardsDisplay() {
-    $('.award').each(function (index) {
+    $('.award', '#awards').each(function (index) {
       if (index < awardsToShow) {
         $(this).show().addClass('scroll-animate');
       } else {
@@ -306,7 +306,7 @@ function initializeAwards() {
       $('#show-more').show();
     }
 
-    const displayedAwards = `1-${Math.min(awardsToShow, $('.award:visible').length)}`;
+    const displayedAwards = `1-${Math.min(awardsToShow, $('.award:visible', '#awards').length)}`;
     $('#displayed-awards').text(displayedAwards);
   }
 
