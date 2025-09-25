@@ -1333,7 +1333,7 @@ body::after {
 footer {
   background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
   color: var(--text-light);
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-align: center;
   font-weight: 500;
   box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
