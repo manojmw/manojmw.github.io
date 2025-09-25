@@ -445,7 +445,7 @@ function initializePresentations() {
       return;
     }
     
-    let presentationsToShow = 4;
+    let presentationsToShow = 6;
     $('#total-presentations').text(totalPresentations);
 
     function updatePresentationsDisplay() {
@@ -465,7 +465,7 @@ function initializePresentations() {
 
     $('#show-more-presentations').on('click', function () {
       if (presentationsToShow >= totalPresentations) {
-        presentationsToShow = 4;
+        presentationsToShow = 6;
         $(this).text('Show more');
       } else {
         presentationsToShow = totalPresentations;
