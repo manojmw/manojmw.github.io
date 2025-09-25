@@ -5,27 +5,29 @@
 <!--Manoj M Wagle-->
 
 <head>
-    <title>Manoj M Wagle - PhD Candidate</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <meta name="google-site-verification" content="e3tNFnDGhbYC66VLQ1eonMnOg5e1jNtUq75irAsZVvU" />
-    <meta name="description" content="Manoj M Wagle - PhD Candidate specializing in Deep Learning, Computational Biology, and Single-cell omics at The University of Sydney">
+    <title>Manoj M Wagle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+
+    <div class="loading-indicator" id="loading-indicator">
+        <div class="spinner"></div>
+    </div>
+
+    <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">Manoj M Wagle</div>
+            <a href="#" class="nav-logo">Manoj M Wagle</a>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#awards">Awards</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#professionalcontributions">Contributions</a></li>
+                <li><a href="#professionalcontributions">Professional Contributions</a></li>
                 <li><a href="#presentations">Presentations</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -35,42 +37,86 @@
                 <span></span>
             </div>
         </div>
-        <div class="mobile-menu" id="mobile-menu">
-            <ul>
-                <li><a href="#about" class="mobile-nav-link">About</a></li>
-                <li><a href="#education" class="mobile-nav-link">Education</a></li>
-                <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
-                <li><a href="#awards" class="mobile-nav-link">Awards</a></li>
-                <li><a href="#publications" class="mobile-nav-link">Publications</a></li>
-                <li><a href="#professionalcontributions" class="mobile-nav-link">Contributions</a></li>
-                <li><a href="#presentations" class="mobile-nav-link">Presentations</a></li>
-                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
-            </ul>
-        </div>
     </nav>
 
-    <!-- Loading indicator -->
-    <div id="loading-indicator" class="loading-indicator">
-        <div class="spinner"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#education" class="mobile-nav-link">Education</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#awards" class="mobile-nav-link">Awards</a></li>
+            <li><a href="#publications" class="mobile-nav-link">Publications</a></li>
+            <li><a href="#professionalcontributions" class="mobile-nav-link">Professional Contributions</a></li>
+            <li><a href="#presentations" class="mobile-nav-link">Presentations</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
     </div>
 
-    <!-- Content Sections -->
-    <div id="about-section"></div>
-    <div id="education-section"></div>
-    <div id="experience-section"></div>
-    <div id="awards-section"></div>
-    <div id="publications-section"></div>
-    <div id="professionalcontributions-section"></div>
-    <div id="presentations-section"></div>
-    <div id="contact-section"></div>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div id="about-section"></div>
+            </div>
+        </section>
 
-    <!-- Back to top button -->
-    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div id="education-section"></div>
+            </div>
+        </section>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div id="experience-section"></div>
+            </div>
+        </section>
+
+        <section id="awards" class="section">
+            <div class="container">
+                <h2 class="section-title">Awards</h2>
+                <div id="awards-section"></div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div id="publications-section"></div>
+            </div>
+        </section>
+
+        <section id="professionalcontributions" class="section">
+            <div class="container">
+                <h2 class="section-title">Professional Contributions</h2>
+                <div id="professionalcontributions-section"></div>
+            </div>
+        </section>
+
+        <section id="presentations" class="section">
+            <div class="container">
+                <h2 class="section-title">Presentations</h2>
+                <div id="presentations-section"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div id="contact-section"></div>
+            </div>
+        </section>
+    </main>
+
+    <button class="back-to-top" id="back-to-top">↑</button>
+
+    <footer>
+        <div class="container">
+            <p>© Manoj M Wagle, 2023 - 2025</p>
+        </div>
+    </footer>
+
 </body>
 </html>
