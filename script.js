@@ -435,47 +435,57 @@ function initializePublications() {
    Presentations 
 ------------------------------ */
 function initializePresentations() {
-  let presentationsToShow = 4;
-  const totalPresentations = $('.award', '#presentations').length;
+  // Wait for presentations to actually load
+  function tryInitialize() {
+    const totalPresentations = $('.award', '#presentations').length;
+    
+    // If presentations haven't loaded yet, try again
+    if (totalPresentations === 0) {
+      setTimeout(tryInitialize, 200);
+      return;
+    }
+    
+    let presentationsToShow = 4;
+    $('#total-presentations').text(totalPresentations);
 
-  $('#total-presentations').text(totalPresentations);
+    function updatePresentationsDisplay() {
+      $('.award', '#presentations').each(function (index) {
+        if (index < presentationsToShow) {
+          $(this).show().addClass('scroll-animate');
+        } else {
+          $(this).hide();
+        }
+      });
 
-  function updatePresentationsDisplay() {
-    $('.award', '#presentations').each(function (index) {
-      if (index < presentationsToShow) {
-        $(this).show().addClass('scroll-animate');
+      const displayedPresentations = `1-${Math.min(presentationsToShow, $('.award:visible', '#presentations').length)}`;
+      $('#displayed-presentations').text(displayedPresentations);
+    }
+
+    updatePresentationsDisplay();
+
+    $('#show-more-presentations').on('click', function () {
+      if (presentationsToShow >= totalPresentations) {
+        presentationsToShow = 4;
+        $(this).text('Show more');
       } else {
-        $(this).hide();
+        presentationsToShow = totalPresentations;
+        $(this).text('Show less');
       }
+      updatePresentationsDisplay();
     });
 
-    const displayedPresentations = `1-${Math.min(presentationsToShow, $('.award:visible', '#presentations').length)}`;
-    $('#displayed-presentations').text(displayedPresentations);
+    $('#view-all-presentations').on('click', function (e) {
+      e.preventDefault();
+      if (presentationsToShow < totalPresentations) {
+        presentationsToShow = totalPresentations;
+        updatePresentationsDisplay();
+        $('#show-more-presentations').text('Show less');
+      }
+    });
   }
-
-  updatePresentationsDisplay();
-
-  $('#show-more-presentations').on('click', function () {
-    if (presentationsToShow >= totalPresentations) {
-      // Show less
-      presentationsToShow = 4;
-      $(this).text('Show more');
-    } else {
-      // Show more  
-      presentationsToShow = totalPresentations;
-      $(this).text('Show less');
-    }
-    updatePresentationsDisplay();
-  });
-
-  $('#view-all-presentations').on('click', function (e) {
-    e.preventDefault();
-    if (presentationsToShow < totalPresentations) {
-      presentationsToShow = totalPresentations;
-      updatePresentationsDisplay();
-      $('#show-more-presentations').text('Show less');
-    }
-  });
+  
+  // Start the retry mechanism
+  tryInitialize();
 }
 
 
