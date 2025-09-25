@@ -1162,11 +1162,15 @@ body::after {
 }
 
 .year-group h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-  display: inline-block;
+font-size: 1.25rem;
+font-weight: 700;
+margin-bottom: 2rem;
+padding-bottom: 0.5rem;
+display: inline-block;
+color: var(--text-primary);    
+background: transparent;      
+border: none;              
+padding: 0;                 
 }
 
 .publications-container {
