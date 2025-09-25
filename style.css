@@ -1223,7 +1223,7 @@ body::after {
   box-shadow: var(--shadow-lg);
 }
 
-/* Contact Section - FIXED */
+/* Contact Section */
 #contact {
   background: var(--bg-primary);
   padding-bottom: 1rem;
@@ -1260,14 +1260,14 @@ body::after {
 
 .contact-icon {
   font-size: 3rem;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin-bottom: 1.5rem;
 }
 
 .contact-info h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--secondary-color); /* FIXED: Made green */
+  color: var(--secondary-color);
   margin-bottom: 1rem;
 }
 
@@ -1286,7 +1286,7 @@ body::after {
 #contact footer {
   margin-top: 1rem;
   padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 1rem;
 }
 
 /* Footer */
