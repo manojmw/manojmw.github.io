@@ -561,7 +561,7 @@ body::after {
 }
 
 .bio-container li {
-  background: var(--bg-secondary);
+  background: rgba(241, 245, 249, 0.8); 
   padding: 0.75rem 1rem;
   border-radius: var(--border-radius-lg);
   font-weight: 500;
