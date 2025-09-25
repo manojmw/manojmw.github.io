@@ -561,7 +561,7 @@ body::after {
 
 .timeline {
   position: relative;
-  max-width: 1000px;
+  max-width: 1200px; /* FIXED: Increased from 1000px to 1200px */
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -581,7 +581,7 @@ body::after {
 .timeline-item {
   position: relative;
   margin: 3rem 0;
-  width: calc(50% - 30px);
+  width: calc(50% - 40px); /* FIXED: Increased space from 30px to 40px */
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease;
@@ -592,7 +592,7 @@ body::after {
 }
 
 .timeline-item:nth-child(even) {
-  left: calc(50% + 30px);
+  left: calc(50% + 40px); /* FIXED: Increased from 30px to 40px */
 }
 
 .timeline-item.animate {
@@ -602,12 +602,13 @@ body::after {
 
 .timeline-content {
   background: var(--bg-secondary);
-  padding: 2.5rem;
+  padding: 3rem; /* FIXED: Increased from 2.5rem to 3rem */
   border-radius: var(--border-radius-2xl);
   box-shadow: var(--shadow-lg);
   border: 2px solid var(--border-color);
   transition: all var(--transition-normal);
   position: relative;
+  min-height: 180px; /* FIXED: Added minimum height */
 }
 
 .timeline-content::before {
@@ -659,11 +660,11 @@ body::after {
 }
 
 .timeline-item:nth-child(odd) .timeline-dot {
-  right: -40px;
+  right: -50px; /* FIXED: Adjusted position */
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
-  left: -40px;
+  left: -50px; /* FIXED: Adjusted position */
 }
 
 .timeline-content h3 {
