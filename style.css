@@ -1,5 +1,5 @@
 /* Manoj M Wagle */
-/* 9 Apr 2023 */
+/* 9 Apr 2023 - Updated Sep 2025 */
 
 :root {
 --primary-color: #2563eb;
@@ -37,23 +37,6 @@
 --transition-slow: 0.5s ease;
 }
 
-/* Dark mode variables */
-body.dark {
---bg-primary: #0f172a;
---bg-secondary: #1e293b;
---bg-tertiary: #334155;
---text-primary: #f1f5f9;
---text-secondary: #cbd5e1;
---text-muted: #94a3b8;
---border-color: #334155;
---border-light: #475569;
---shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
---shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -1px rgb(0 0 0 / 0.2);
---shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -2px rgb(0 0 0 / 0.2);
---shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 10px 10px -5px rgb(0 0 0 / 0.2);
---shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.6);
-}
-
 * {
 margin: 0;
 padding: 0;
@@ -72,7 +55,6 @@ line-height: 1.6;
 color: var(--text-primary);
 background-color: var(--bg-primary);
 overflow-x: hidden;
-transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Loading Indicator */
@@ -111,32 +93,6 @@ animation: spin 1s linear infinite;
 100% { transform: rotate(360deg); }
 }
 
-/* Dark mode toggle */
-.dark-mode-toggle {
-position: fixed;
-top: 80px;
-right: 2rem;
-width: 50px;
-height: 50px;
-background: var(--gradient-primary);
-color: white;
-border: none;
-border-radius: 50%;
-cursor: pointer;
-font-size: 1.2rem;
-box-shadow: var(--shadow-lg);
-transition: all var(--transition-normal);
-z-index: 999;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.dark-mode-toggle:hover {
-transform: scale(1.1);
-box-shadow: var(--shadow-xl);
-}
-
 /* Navigation */
 .navbar {
 position: fixed;
@@ -149,10 +105,6 @@ backdrop-filter: blur(20px);
 border-bottom: 1px solid var(--border-light);
 z-index: 1000;
 transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-}
-
-body.dark .navbar {
-background: rgba(15, 23, 42, 0.95);
 }
 
 .navbar.hidden {
@@ -378,16 +330,14 @@ margin-top: 70px;
 
 .about-content {
 display: grid;
-grid-template-columns: 1fr;
+grid-template-columns: 380px 1fr;
 gap: 4rem;
-align-items: center;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
+align-items: start;
 }
 
 .left-section {
-order: 1;
+position: sticky;
+top: 100px;
 }
 
 .img-container {
@@ -412,22 +362,21 @@ box-shadow: var(--shadow-2xl);
 }
 
 .info-container {
-text-align: center;
+text-align: left;
 background: transparent;
 box-shadow: none;
 padding: 0;
-margin-bottom: 2rem;
 }
 
 .info-container h2 {
-font-size: 2.5rem;
+font-size: 1.75rem;
 font-weight: 700;
 margin-bottom: 0.5rem;
 color: var(--text-primary);
 }
 
 .info-container h3 {
-font-size: 1.3rem;
+font-size: 1.2rem;
 color: var(--text-secondary);
 font-weight: 600;
 margin-bottom: 0.75rem;
@@ -437,7 +386,7 @@ font-style: normal;
 .info-container h4 {
 color: var(--primary-color);
 font-weight: 600;
-font-size: 1.1rem;
+font-size: 1rem;
 margin-bottom: 1.5rem;
 }
 
@@ -453,7 +402,7 @@ color: var(--primary-dark);
 
 .social-links {
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 gap: 1rem;
 }
 
@@ -485,14 +434,12 @@ width: 20px;
 }
 
 .right-section {
-order: 2;
-background: var(--bg-primary);
+background: white;
 border: 1px solid var(--border-light);
 padding: 3rem;
 border-radius: var(--border-radius-2xl);
 box-shadow: var(--shadow-md);
 transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-text-align: left;
 }
 
 .right-section:hover {
@@ -519,6 +466,39 @@ color: var(--primary-dark);
 text-decoration: underline;
 }
 
+.bio-container h4 {
+font-size: 1.4rem;
+font-weight: 600;
+color: var(--text-primary);
+margin-bottom: 1rem;
+margin-top: 2rem;
+}
+
+.bio-container ul {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 0.75rem;
+margin-top: 1rem;
+list-style: none;
+}
+
+.bio-container li {
+background: var(--bg-secondary);
+padding: 0.75rem 1rem;
+border-radius: var(--border-radius-lg);
+font-weight: 500;
+text-align: center;
+transition: all var(--transition-normal);
+border: 2px solid transparent;
+}
+
+.bio-container li:hover {
+background: var(--primary-color);
+color: white;
+transform: translateY(-2px);
+border-color: var(--primary-color);
+}
+
 /* Education Section */
 #education {
 background: var(--bg-primary);
@@ -541,12 +521,6 @@ bottom: 0;
 width: 2px;
 background: var(--border-color);
 border-radius: 1px;
-}
-
-.timeline::after {
-content: "";
-display: table;
-clear: both;
 }
 
 .timeline-item {
@@ -598,7 +572,7 @@ transform: translateY(-50%);
 }
 
 .timeline-content {
-background: var(--bg-primary);
+background: white;
 padding: 2.5rem;
 border-radius: var(--border-radius-2xl);
 box-shadow: var(--shadow-lg);
@@ -727,7 +701,7 @@ display: none;
 
 .item-main {
 flex: 1;
-background: var(--bg-primary);
+background: white;
 padding: 2.5rem;
 border-radius: var(--border-radius-2xl);
 box-shadow: var(--shadow-lg);
@@ -847,7 +821,7 @@ display: flex;
 justify-content: space-between;
 align-items: flex-start;
 gap: 2rem;
-background: var(--bg-primary);
+background: white;
 border: 2px solid var(--border-color);
 border-radius: var(--border-radius-xl);
 padding: 2rem;
@@ -952,7 +926,7 @@ min-width: 250px;
 padding: 0.75rem 1rem;
 border: 2px solid var(--border-color);
 border-radius: var(--border-radius-md);
-background: var(--bg-primary);
+background: white;
 color: var(--text-primary);
 font-weight: 500;
 transition: border-color var(--transition-fast);
@@ -967,7 +941,7 @@ border-color: var(--primary-color);
 padding: 0.75rem 1rem;
 border: 2px solid var(--border-color);
 border-radius: var(--border-radius-md);
-background: var(--bg-primary);
+background: white;
 color: var(--text-primary);
 font-weight: 500;
 cursor: pointer;
@@ -999,7 +973,7 @@ gap: 1.5rem;
 }
 
 .publication {
-background: var(--bg-primary);
+background: white;
 border: 2px solid var(--border-color);
 border-radius: var(--border-radius-xl);
 padding: 2rem;
@@ -1100,29 +1074,29 @@ background: var(--bg-primary);
 
 #professionalcontributions h3 {
 font-size: 1.5rem;
-font-weight: 700;
+font-weight: 600;
 color: var(--text-primary);
 margin: 2.5rem 0 1rem 0;
 }
 
 #professionalcontributions ul {
-display: block;
-list-style: disc;
-padding-left: 2rem;
+display: grid;
+gap: 0.5rem;
+list-style: none;
+padding-left: 1.5rem;
 margin-bottom: 1rem;
 }
 
 #professionalcontributions li {
 background: transparent;
-padding: 0.3rem 0;
-font-weight: 400;
+padding: 0.5rem 0;
+font-weight: 500;
 color: var(--text-primary);
 transition: all var(--transition-normal);
 opacity: 0;
 transform: translateX(-20px);
 border: none;
 box-shadow: none;
-display: list-item;
 }
 
 #professionalcontributions li.animate {
@@ -1145,7 +1119,7 @@ margin: 0 auto;
 }
 
 #presentations li {
-background: var(--bg-primary);
+background: white;
 padding: 2rem;
 border-radius: var(--border-radius-xl);
 box-shadow: var(--shadow-lg);
@@ -1201,7 +1175,7 @@ transform: translateY(0);
 }
 
 .contact-item:hover {
-background: var(--bg-primary);
+background: white;
 border-color: var(--primary-color);
 transform: translateY(-8px);
 box-shadow: var(--shadow-xl);
@@ -1247,10 +1221,6 @@ text-align: center;
 font-weight: 500;
 }
 
-body.dark footer {
-background: var(--bg-tertiary);
-}
-
 footer p {
 margin: 0.25rem 0;
 }
@@ -1268,6 +1238,17 @@ transform: translateY(0);
 }
 
 /* Mobile Responsive */
+@media (max-width: 1024px) {
+.about-content {
+grid-template-columns: 350px 1fr;
+gap: 3rem;
+}
+
+.left-section {
+position: static;
+}
+}
+
 @media (max-width: 900px) {
 .timeline::before {
 left: 30px;
@@ -1313,11 +1294,9 @@ padding: 6rem 0 4rem;
 }
 
 .about-content {
+grid-template-columns: 1fr;
 gap: 2rem;
-}
-
-.info-container h2 {
-font-size: 2rem;
+text-align: center;
 }
 
 .right-section {
@@ -1353,10 +1332,6 @@ min-width: auto;
 grid-template-columns: 1fr;
 gap: 2rem;
 }
-
-.dark-mode-toggle {
-right: 1rem;
-}
 }
 
 @media (max-width: 480px) {
@@ -1372,10 +1347,7 @@ padding: 0 1rem;
 font-size: 1.75rem;
 }
 
-.info-container h2 {
-font-size: 1.8rem;
-}
-
+.info-container,
 .right-section {
 padding: 1.5rem;
 }
@@ -1405,12 +1377,6 @@ bottom: 1rem;
 right: 1rem;
 width: 45px;
 height: 45px;
-}
-
-.dark-mode-toggle {
-width: 45px;
-height: 45px;
-right: 1rem;
 }
 }
 
