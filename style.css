@@ -428,7 +428,7 @@ body::after {
 }
 
 .img-container img:hover {
-  transform: scale(1.05) rotate(5deg);
+  transform: scale(1.05); 
   box-shadow: var(--shadow-2xl);
   border-color: var(--purple);
 }
@@ -764,15 +764,15 @@ body::after {
 }
 
 .circle {
-  width: 18px;
-  height: 18px;
+  width: 24px;   
+  height: 24px;  
   border: 3px solid var(--text-muted);
   border-radius: 50%;
   background: var(--bg-card);
   transition: all var(--transition-normal);
   position: relative;
   z-index: 2;
-  left: 16px;
+  left: 13px; 
 }
 
 .item.current .circle {
@@ -799,7 +799,7 @@ body::after {
   background: var(--text-muted);
   width: 3px;
   top: 28px;
-  left: 24px;
+  left: 21px;
   height: calc(100% + 40px);
   transition: background var(--transition-normal);
 }
