@@ -1268,7 +1268,7 @@ body::after {
 /* Contact */
 #contact {
   background: var(--bg-primary);
-  padding: 6rem 0 10rem;
+  padding: 6rem 0 2rem;
   margin-bottom: 0;
 }
 
