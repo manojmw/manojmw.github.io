@@ -667,10 +667,12 @@ body::after {
   border-color: var(--primary-color);
 }
 
-.timeline-content:hover::before {
+/* Left side hover (odd items) */
+.timeline-item:nth-child(odd) .timeline-content:hover::before {
   border-color: transparent transparent transparent var(--primary-color);
 }
 
+/* Right side hover (even items) */
 .timeline-item:nth-child(even) .timeline-content:hover::before {
   border-color: transparent var(--primary-color) transparent transparent;
 }
