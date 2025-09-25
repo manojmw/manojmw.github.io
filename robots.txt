@@ -1,2 +1,24 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://manojmw.github.io/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Allow all CSS and JS files for proper rendering
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+Allow: *.webp
+
+# Block any potential admin or sensitive directories
+Disallow: /admin/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /node_modules/
