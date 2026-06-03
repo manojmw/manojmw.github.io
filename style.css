@@ -509,10 +509,10 @@ body::after {
 
 .collab-note {
   margin-top: 2rem;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
-  line-height: 1.6;
-  text-align: center;
+  line-height: 1.8;
+  text-align: left;
 }
 
 .right-section {
