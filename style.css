@@ -569,7 +569,7 @@ body::after {
   border: none;
   height: 1px;
   background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-  margin: 2.5rem 0;
+  margin: 3.5rem 0 2.5rem;
 }
 
 .bio-container ul {
