@@ -560,6 +560,11 @@ body::after {
   margin-top: 2rem;
 }
 
+.bio-container h4 + h4,
+.bio-container ul + h4 {
+  margin-top: 3rem;
+}
+
 .bio-container ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
