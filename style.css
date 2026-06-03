@@ -507,6 +507,14 @@ body::after {
   width: 22px;
 }
 
+.collab-note {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  text-align: center;
+}
+
 .right-section {
   background: var(--bg-card);
   border: 2px solid var(--border-color);
