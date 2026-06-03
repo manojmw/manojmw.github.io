@@ -565,6 +565,13 @@ body::after {
   margin-top: 3rem;
 }
 
+.collab-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+  margin: 2.5rem 0;
+}
+
 .bio-container ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
