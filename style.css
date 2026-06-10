@@ -422,7 +422,7 @@ body::after {
   height: 240px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 50%;
+  object-position: center 60%;
   border: 6px solid var(--primary-color);
   box-shadow: var(--shadow-colored);
   transition: all var(--transition-normal);
