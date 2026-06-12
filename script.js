@@ -497,6 +497,7 @@ function initializeContact() {
   
   $('#uni-email').text(createEmail('mwag8019', 'uni.sydney.edu.au'));
   $('#cmri-email').text(createEmail('mwagle', 'cmri.org.au'));
+  $('#mit-email').text(createEmail('manojmw', 'mit.edu'));
 
   
   $('[id$="-email"]')

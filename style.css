@@ -565,6 +565,13 @@ body::after {
   margin-top: 3rem;
 }
 
+.contact-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+  margin: 1rem 0;
+}
+
 .collab-divider {
   border: none;
   height: 1px;
