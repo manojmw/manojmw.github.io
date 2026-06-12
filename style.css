@@ -569,7 +569,12 @@ body::after {
   border: none;
   height: 1px;
   background: linear-gradient(to right, transparent, var(--primary-color), transparent);
-  margin: 1rem 0;
+  margin: 1.75rem 0 1rem;
+}
+
+.contact-info .contact-email,
+.contact-info p:has(.fa-envelope) {
+  text-align: left;
 }
 
 .collab-divider {
