@@ -572,9 +572,8 @@ body::after {
   margin: 1.75rem 0 1rem;
 }
 
-.contact-info .contact-email,
 .contact-info p:has(.fa-envelope) {
-  text-align: left;
+  text-align: center;
 }
 
 .collab-divider {
