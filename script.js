@@ -19,7 +19,7 @@ $(document).ready(function () {
   setupPerformanceOptimizations();
 });
 
-
+ 
 function initializeWebsite() {
   
   $('#loading-indicator').removeClass('hidden');
