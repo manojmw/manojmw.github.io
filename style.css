@@ -126,7 +126,7 @@ body::after {
     transform: translateX(-100px) translateY(-100px);
   }
 }
-
+ 
 /* Loading Indicator */
 .loading-indicator {
   position: fixed;
@@ -1364,7 +1364,7 @@ padding: 0;
   box-shadow: var(--shadow-lg);
   backdrop-filter: blur(10px);
 }
-
+ 
 .contact-item.animate {
   opacity: 1;
   transform: translateY(0);
